@@ -94,6 +94,7 @@
             this.lb_passwordforget.Size = new System.Drawing.Size(116, 15);
             this.lb_passwordforget.TabIndex = 4;
             this.lb_passwordforget.Text = "Mot de Passe oublié";
+            this.lb_passwordforget.Click += new System.EventHandler(this.lb_passwordforget_Click);
             // 
             // tb_login
             // 
@@ -145,7 +146,7 @@
             this.Controls.Add(this.bt_submit);
             this.Font = new System.Drawing.Font("Georgia", 10F);
             this.Name = "Form1";
-            this.Text = "Form1";
+            this.Text = "Morpion : Connexion";
             this.ResumeLayout(false);
             this.PerformLayout();
 
