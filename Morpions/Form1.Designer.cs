@@ -39,7 +39,7 @@
             // 
             // bt_submit
             // 
-            this.bt_submit.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
+            this.bt_submit.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.bt_submit.BackColor = System.Drawing.Color.SkyBlue;
             this.bt_submit.Font = new System.Drawing.Font("Georgia", 12F);
             this.bt_submit.ForeColor = System.Drawing.Color.Red;
@@ -74,17 +74,17 @@
             // 
             // lb_register
             // 
-            this.lb_register.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
-            this.lb_register.AutoSize = true;
+            this.lb_register.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.lb_register.Location = new System.Drawing.Point(121, 125);
             this.lb_register.Name = "lb_register";
             this.lb_register.Size = new System.Drawing.Size(49, 13);
             this.lb_register.TabIndex = 3;
             this.lb_register.Text = "S\'inscrire";
+            this.lb_register.Click += new System.EventHandler(this.lb_register_Click);
             // 
             // lb_passwordforget
             // 
-            this.lb_passwordforget.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
+            this.lb_passwordforget.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.lb_passwordforget.AutoSize = true;
             this.lb_passwordforget.Location = new System.Drawing.Point(94, 152);
             this.lb_passwordforget.Name = "lb_passwordforget";

@@ -9,21 +9,11 @@ using System.Windows.Forms;
 
 namespace Morpions
 {
-    public partial class Form1 : Form
+    public partial class register : Form
     {
-        public Form1()
+        public register()
         {
             InitializeComponent();
         }
-
-        private void lb_register_Click(object sender, EventArgs e)
-        {
-            Form1.ActiveForm.Close();
-            register op = new register();
-            op.Show();
-
-        }
-
-
     }
 }
