@@ -1,0 +1,38 @@
+#summary One-sentence summary of this page.
+#labels Featured,Phase-Design,Phase-Implementation
+
+= Mise en place d'un client SVN sous Visual Studio =
+
+Pour mettre en place un client SVN sous Visual Studio, il faut télécharger Turtoise_SVN et un pluging apellé VisualSVN.
+ 
+
+= TurtoiseSVN =
+
+Ce logiciel permet de transférer les données entre le client et le serveur tout en regardant les différentes versions afin de ne pas supprimer des données fraichement crées.
+
+Pour l'Insia, il faut faire attention a la connexion à internet en rentrant le proxy, le login et le password proxy.
+
+
+= VisualSVN =
+
+Ce pluging permet de gérer Subversion sous visual studio.
+Au lieu de créer un nouveau projet, cliquez sur VisualSVN > Get Solution from Subversion et ensuite vous mettez les bons liens avec le login (Email sans le @gmail.com) et le password que je vous ai envoyé par mail. Ensuite vous récuperez Morpions (AVEC UN S) et voila vous avez rapatriez le projet.
+
+= Utilisation de tous les jours =
+
+Avant de toucher au fichier, faites un update !! Cela permet de recuperer la dernière version du projet.
+Et regulièrement, faites des commits!! Cela met a jour les fichiers sur le serveur
+
+= Conflits = 
+
+Lorsqu'un conflit est détecter par SVN, il vous le dit (souvent en rouge). Faite une sauvegarde de votre travail, et ensuite recuperer la derniere version du projet en faisant un update et remettez votre sauvegarde puis lancez la mise à jour.
+
+= ATTENTION = 
+
+Subversion ne permet pas d'ecrire dans le meme fichier en meme temps. Cela permet juste de mettre a jour les données sur un serveur et de les recuperer assez facilement. De plus, nous avons accès aux différentes versions de la v1 a la vN.
+
+
+Add your content here.  Format your content with:
+  * Text in *bold* or _italic_
+  * Headings, paragraphs, and lists
+  * Automatic links to other wiki pages
