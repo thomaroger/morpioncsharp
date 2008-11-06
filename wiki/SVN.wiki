@@ -1,4 +1,4 @@
-#summary One-sentence summary of this page.
+#summary SVN sous microsoft visual studio
 #labels Featured,Phase-Design,Phase-Implementation
 
 = Mise en place d'un client SVN sous Visual Studio =
