@@ -43,7 +43,7 @@
             this.bt_submit.BackColor = System.Drawing.Color.SkyBlue;
             this.bt_submit.Font = new System.Drawing.Font("Georgia", 12F);
             this.bt_submit.ForeColor = System.Drawing.Color.Red;
-            this.bt_submit.Location = new System.Drawing.Point(77, 214);
+            this.bt_submit.Location = new System.Drawing.Point(80, 179);
             this.bt_submit.Name = "bt_submit";
             this.bt_submit.Size = new System.Drawing.Size(130, 42);
             this.bt_submit.TabIndex = 0;
@@ -73,7 +73,7 @@
             // lb_register
             // 
             this.lb_register.AutoSize = true;
-            this.lb_register.Location = new System.Drawing.Point(113, 158);
+            this.lb_register.Location = new System.Drawing.Point(121, 125);
             this.lb_register.Name = "lb_register";
             this.lb_register.Size = new System.Drawing.Size(49, 13);
             this.lb_register.TabIndex = 3;
@@ -82,7 +82,7 @@
             // lb_passwordforget
             // 
             this.lb_passwordforget.AutoSize = true;
-            this.lb_passwordforget.Location = new System.Drawing.Point(88, 185);
+            this.lb_passwordforget.Location = new System.Drawing.Point(94, 152);
             this.lb_passwordforget.Name = "lb_passwordforget";
             this.lb_passwordforget.Size = new System.Drawing.Size(103, 13);
             this.lb_passwordforget.TabIndex = 4;
@@ -111,7 +111,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(296, 268);
+            this.ClientSize = new System.Drawing.Size(302, 233);
             this.Controls.Add(this.tb_password);
             this.Controls.Add(this.tb_login);
             this.Controls.Add(this.lb_passwordforget);
