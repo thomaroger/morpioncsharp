@@ -166,7 +166,7 @@
             this.bt_submit.BackColor = System.Drawing.Color.SkyBlue;
             this.bt_submit.Font = new System.Drawing.Font("Georgia", 12F);
             this.bt_submit.ForeColor = System.Drawing.Color.Red;
-            this.bt_submit.Location = new System.Drawing.Point(104, 428);
+            this.bt_submit.Location = new System.Drawing.Point(321, 428);
             this.bt_submit.Name = "bt_submit";
             this.bt_submit.Size = new System.Drawing.Size(108, 35);
             this.bt_submit.TabIndex = 13;
@@ -179,7 +179,7 @@
             this.bt_close.BackColor = System.Drawing.Color.SkyBlue;
             this.bt_close.Font = new System.Drawing.Font("Georgia", 12F);
             this.bt_close.ForeColor = System.Drawing.Color.Red;
-            this.bt_close.Location = new System.Drawing.Point(321, 428);
+            this.bt_close.Location = new System.Drawing.Point(104, 428);
             this.bt_close.Name = "bt_close";
             this.bt_close.Size = new System.Drawing.Size(108, 35);
             this.bt_close.TabIndex = 14;
