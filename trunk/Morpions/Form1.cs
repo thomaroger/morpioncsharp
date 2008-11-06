@@ -18,10 +18,8 @@ namespace Morpions
 
         private void lb_register_Click(object sender, EventArgs e)
         {
-            Form1.ActiveForm.Close();
             register op = new register();
             op.Show();
-
         }
 
 
