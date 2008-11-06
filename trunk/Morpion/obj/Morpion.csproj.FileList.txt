@@ -1,0 +1,8 @@
+bin\Debug\Morpion.exe
+bin\Debug\Morpion.pdb
+obj\Debug\ResolveAssemblyReference.cache
+obj\Debug\Morpion.Form1.resources
+obj\Debug\Morpion.Properties.Resources.resources
+obj\Debug\Morpion.csproj.GenerateResource.Cache
+obj\Debug\Morpion.exe
+obj\Debug\Morpion.pdb
