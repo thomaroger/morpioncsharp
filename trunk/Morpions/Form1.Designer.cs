@@ -52,6 +52,7 @@
             // 
             // lb_login
             // 
+            this.lb_login.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.lb_login.AutoSize = true;
             this.lb_login.Font = new System.Drawing.Font("Georgia", 9F);
             this.lb_login.Location = new System.Drawing.Point(63, 35);
@@ -62,6 +63,7 @@
             // 
             // lb_password
             // 
+            this.lb_password.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.lb_password.AutoSize = true;
             this.lb_password.Font = new System.Drawing.Font("Georgia", 9F);
             this.lb_password.Location = new System.Drawing.Point(43, 72);
@@ -72,6 +74,7 @@
             // 
             // lb_register
             // 
+            this.lb_register.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.lb_register.AutoSize = true;
             this.lb_register.Location = new System.Drawing.Point(121, 125);
             this.lb_register.Name = "lb_register";
@@ -81,6 +84,7 @@
             // 
             // lb_passwordforget
             // 
+            this.lb_passwordforget.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.lb_passwordforget.AutoSize = true;
             this.lb_passwordforget.Location = new System.Drawing.Point(94, 152);
             this.lb_passwordforget.Name = "lb_passwordforget";
@@ -90,6 +94,7 @@
             // 
             // tb_login
             // 
+            this.tb_login.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.tb_login.BackColor = System.Drawing.Color.LightGray;
             this.tb_login.Font = new System.Drawing.Font("Georgia", 9F);
             this.tb_login.Location = new System.Drawing.Point(115, 30);
@@ -99,6 +104,7 @@
             // 
             // tb_password
             // 
+            this.tb_password.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.tb_password.BackColor = System.Drawing.Color.LightGray;
             this.tb_password.Font = new System.Drawing.Font("Georgia", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tb_password.Location = new System.Drawing.Point(115, 70);
