@@ -29,7 +29,20 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
+            this.bt_close = new System.Windows.Forms.Button();
             this.SuspendLayout();
+            // 
+            // bt_close
+            // 
+            this.bt_close.BackColor = System.Drawing.SystemColors.MenuBar;
+            this.bt_close.Font = new System.Drawing.Font("Georgia", 8.25F);
+            this.bt_close.Location = new System.Drawing.Point(271, 521);
+            this.bt_close.Name = "bt_close";
+            this.bt_close.Size = new System.Drawing.Size(149, 44);
+            this.bt_close.TabIndex = 0;
+            this.bt_close.Text = "Fermer";
+            this.bt_close.UseVisualStyleBackColor = false;
+            this.bt_close.Click += new System.EventHandler(this.button1_Click);
             // 
             // Form1
             // 
@@ -37,6 +50,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.ClientSize = new System.Drawing.Size(438, 578);
+            this.Controls.Add(this.bt_close);
             this.Name = "Form1";
             this.Text = "Form1";
             this.ResumeLayout(false);
@@ -44,6 +58,8 @@
         }
 
         #endregion
+
+        private System.Windows.Forms.Button bt_close;
 
     }
 }
