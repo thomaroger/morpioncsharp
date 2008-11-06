@@ -81,7 +81,7 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Georgia", 10F);
-            this.label3.Location = new System.Drawing.Point(154, 339);
+            this.label3.Location = new System.Drawing.Point(161, 353);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(51, 17);
             this.label3.TabIndex = 3;
@@ -91,7 +91,7 @@
             // 
             this.lb_name.AutoSize = true;
             this.lb_name.Font = new System.Drawing.Font("Georgia", 10F);
-            this.lb_name.Location = new System.Drawing.Point(364, 280);
+            this.lb_name.Location = new System.Drawing.Point(363, 161);
             this.lb_name.Name = "lb_name";
             this.lb_name.Size = new System.Drawing.Size(65, 17);
             this.lb_name.TabIndex = 4;
@@ -101,7 +101,7 @@
             // 
             this.lb_password2.AutoSize = true;
             this.lb_password2.Font = new System.Drawing.Font("Georgia", 10F);
-            this.lb_password2.Location = new System.Drawing.Point(35, 280);
+            this.lb_password2.Location = new System.Drawing.Point(35, 283);
             this.lb_password2.Name = "lb_password2";
             this.lb_password2.Size = new System.Drawing.Size(177, 17);
             this.lb_password2.TabIndex = 5;
@@ -111,7 +111,7 @@
             // 
             this.lb_surname.AutoSize = true;
             this.lb_surname.Font = new System.Drawing.Font("Georgia", 10F);
-            this.lb_surname.Location = new System.Drawing.Point(383, 339);
+            this.lb_surname.Location = new System.Drawing.Point(382, 220);
             this.lb_surname.Name = "lb_surname";
             this.lb_surname.Size = new System.Drawing.Size(46, 17);
             this.lb_surname.TabIndex = 6;
@@ -119,6 +119,7 @@
             // 
             // tb_login
             // 
+            this.tb_login.BackColor = System.Drawing.Color.LightGray;
             this.tb_login.Location = new System.Drawing.Point(225, 158);
             this.tb_login.Name = "tb_login";
             this.tb_login.Size = new System.Drawing.Size(118, 20);
@@ -126,6 +127,7 @@
             // 
             // tb_password
             // 
+            this.tb_password.BackColor = System.Drawing.Color.LightGray;
             this.tb_password.Location = new System.Drawing.Point(225, 224);
             this.tb_password.Name = "tb_password";
             this.tb_password.PasswordChar = '*';
@@ -134,7 +136,8 @@
             // 
             // tb_password2
             // 
-            this.tb_password2.Location = new System.Drawing.Point(225, 277);
+            this.tb_password2.BackColor = System.Drawing.Color.LightGray;
+            this.tb_password2.Location = new System.Drawing.Point(225, 282);
             this.tb_password2.Name = "tb_password2";
             this.tb_password2.PasswordChar = '*';
             this.tb_password2.Size = new System.Drawing.Size(118, 20);
@@ -142,21 +145,24 @@
             // 
             // tb_email
             // 
-            this.tb_email.Location = new System.Drawing.Point(225, 336);
+            this.tb_email.BackColor = System.Drawing.Color.LightGray;
+            this.tb_email.Location = new System.Drawing.Point(225, 350);
             this.tb_email.Name = "tb_email";
-            this.tb_email.Size = new System.Drawing.Size(118, 20);
+            this.tb_email.Size = new System.Drawing.Size(204, 20);
             this.tb_email.TabIndex = 10;
             // 
             // tb_name
             // 
-            this.tb_name.Location = new System.Drawing.Point(435, 277);
+            this.tb_name.BackColor = System.Drawing.Color.LightGray;
+            this.tb_name.Location = new System.Drawing.Point(434, 158);
             this.tb_name.Name = "tb_name";
             this.tb_name.Size = new System.Drawing.Size(118, 20);
             this.tb_name.TabIndex = 11;
             // 
             // tb_surname
             // 
-            this.tb_surname.Location = new System.Drawing.Point(435, 336);
+            this.tb_surname.BackColor = System.Drawing.Color.LightGray;
+            this.tb_surname.Location = new System.Drawing.Point(434, 217);
             this.tb_surname.Name = "tb_surname";
             this.tb_surname.Size = new System.Drawing.Size(118, 20);
             this.tb_surname.TabIndex = 12;
@@ -209,7 +215,7 @@
             this.Controls.Add(this.lb_login);
             this.Controls.Add(this.lb_register);
             this.Name = "register";
-            this.Text = "register";
+            this.Text = "Morpion : Inscription";
             this.ResumeLayout(false);
             this.PerformLayout();
 

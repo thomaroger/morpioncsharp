@@ -27,6 +27,12 @@ namespace Morpions
             Form1.ActiveForm.Close();
         }
 
+        private void lb_passwordforget_Click(object sender, EventArgs e)
+        {
+            password_forget op = new password_forget();
+            op.Show();
+        }
+
 
     }
 }
