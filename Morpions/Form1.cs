@@ -29,6 +29,7 @@ namespace Morpions
 
         private void lb_passwordforget_Click(object sender, EventArgs e)
         {
+            Form1.ActiveForm.Close();
             password_forget op = new password_forget();
             op.Show();
         }
@@ -38,7 +39,8 @@ namespace Morpions
             // verification du login et du mot de passe avec la base de donnee
             if (tb_login.Text == "etudiant" && tb_password.Text=="password")
             {
-
+                Menu op = new Menu();
+                op.Show();
             }
             else {
                 MessageBox.Show("Accès refusé", "Erreur", MessageBoxButtons.OK, MessageBoxIcon.Error);
