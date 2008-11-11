@@ -84,6 +84,7 @@
             // morpion_1_1
             // 
             this.morpion_1_1.BackColor = System.Drawing.SystemColors.Control;
+            this.morpion_1_1.Font = new System.Drawing.Font("Georgia", 50F);
             this.morpion_1_1.ForeColor = System.Drawing.Color.White;
             this.morpion_1_1.Location = new System.Drawing.Point(4, 4);
             this.morpion_1_1.Name = "morpion_1_1";

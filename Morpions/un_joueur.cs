@@ -23,7 +23,8 @@ namespace Morpions
 
         private void morpion_1_1_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("Click dans 1_1");
+            morpion_1_1.Text = "X";  
+            morpion_1_1.Update();
         }
     }
 }
