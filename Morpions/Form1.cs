@@ -33,6 +33,19 @@ namespace Morpions
             op.Show();
         }
 
+        private void bt_submit_Click(object sender, EventArgs e)
+        {
+            // verification du login et du mot de passe avec la base de donnee
+            if (tb_login.Text == "etudiant" && tb_password.Text=="password")
+            {
+
+            }
+            else {
+                MessageBox.Show("Accès refusé", "Erreur", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+
+        }
+
 
     }
 }
