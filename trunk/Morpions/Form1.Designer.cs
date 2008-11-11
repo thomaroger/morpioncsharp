@@ -50,6 +50,7 @@
             this.bt_submit.TabIndex = 0;
             this.bt_submit.Text = "Valider";
             this.bt_submit.UseVisualStyleBackColor = false;
+            this.bt_submit.Click += new System.EventHandler(this.bt_submit_Click);
             // 
             // lb_login
             // 
