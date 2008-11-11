@@ -9,9 +9,9 @@ using System.Windows.Forms;
 
 namespace Morpions
 {
-    public partial class Menu : Form
+    public partial class un_joueur : Form
     {
-        public Menu()
+        public un_joueur()
         {
             InitializeComponent();
         }
