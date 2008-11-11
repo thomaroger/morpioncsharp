@@ -32,6 +32,7 @@
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // bt_close
@@ -39,7 +40,7 @@
             this.bt_close.BackColor = System.Drawing.Color.SkyBlue;
             this.bt_close.Font = new System.Drawing.Font("Georgia", 12F);
             this.bt_close.ForeColor = System.Drawing.Color.Red;
-            this.bt_close.Location = new System.Drawing.Point(92, 219);
+            this.bt_close.Location = new System.Drawing.Point(91, 273);
             this.bt_close.Name = "bt_close";
             this.bt_close.Size = new System.Drawing.Size(108, 35);
             this.bt_close.TabIndex = 15;
@@ -78,11 +79,22 @@
             this.label3.TabIndex = 18;
             this.label3.Text = "Rechercher 1 Joueur sur Internet";
             // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Georgia", 10F);
+            this.label4.Location = new System.Drawing.Point(93, 222);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(106, 17);
+            this.label4.TabIndex = 19;
+            this.label4.Text = "Top 10 Joueurs";
+            // 
             // menu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(292, 266);
+            this.ClientSize = new System.Drawing.Size(292, 320);
+            this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
@@ -100,5 +112,6 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label label4;
     }
 }
