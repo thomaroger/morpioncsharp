@@ -15,5 +15,15 @@ namespace Morpions
         {
             InitializeComponent();
         }
+
+        private void bt_close_Click(object sender, EventArgs e)
+        {
+            un_joueur.ActiveForm.Close();
+        }
+
+        private void morpion_1_1_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Click dans 1_1");
+        }
     }
 }
