@@ -1978,21 +1978,24 @@ SELECT USER_ID, USER_LOGIN, USER_PASSWORD, USER_EMAIL, USER_NAME, USER_SURNAME, 
             this._commandCollection[2].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@USER_ID", global::System.Data.SqlDbType.Int, 4, global::System.Data.ParameterDirection.Input, 0, 0, "USER_ID", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._commandCollection[3] = new global::System.Data.SqlClient.SqlCommand();
             this._commandCollection[3].Connection = this.Connection;
-            this._commandCollection[3].CommandText = @"INSERT INTO [USER] ([USER_LOGIN], [USER_PASSWORD], [USER_EMAIL], [USER_NAME], [USER_SURNAME], [USER_IP], [USER_WIN_PLAYER], [USER_WIN_COMPUTER], [USER_DRAW_PLAYER], [USER_DRAW_COMPUTER], [USER_LOSE_PLAYER], [USER_LOSE_COMPUTER], [USER_XP]) VALUES (@USER_ID, @USER_LOGIN, @USER_PASSWORD, @USER_EMAIL, @USER_NAME, @USER_SURNAME, @USER_IP, @USER_WIN_PLAYER, @USER_WIN_COMPUTER, @USER_DRAW_PLAYER, @USER_DRAW_COMPUTER, @USER_LOSE_PLAYER, @USER_LOSE_COMPUTER, @USER_XP);";
+            this._commandCollection[3].CommandText = @"INSERT INTO [USER]
+                      (USER_LOGIN, USER_PASSWORD, USER_EMAIL, USER_NAME, USER_SURNAME, USER_IP, USER_WIN_PLAYER, USER_WIN_COMPUTER, 
+                      USER_DRAW_PLAYER, USER_DRAW_COMPUTER, USER_LOSE_PLAYER, USER_LOSE_COMPUTER, USER_XP)
+VALUES     (@USER_LOGIN,@USER_PASSWORD,@USER_EMAIL,@USER_NAME,@USER_SURNAME,@USER_IP,@USER_WIN_PLAYER,@USER_WIN_COMPUTER,@USER_DRAW_PLAYER,@USER_DRAW_COMPUTER,@USER_LOSE_PLAYER,@USER_LOSE_COMPUTER,@USER_XP)";
             this._commandCollection[3].CommandType = global::System.Data.CommandType.Text;
-            this._commandCollection[3].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@USER_ID", global::System.Data.SqlDbType.VarChar, 20, global::System.Data.ParameterDirection.Input, 0, 0, "USER_LOGIN", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            this._commandCollection[3].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@USER_LOGIN", global::System.Data.SqlDbType.VarChar, 40, global::System.Data.ParameterDirection.Input, 0, 0, "USER_PASSWORD", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            this._commandCollection[3].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@USER_PASSWORD", global::System.Data.SqlDbType.VarChar, 50, global::System.Data.ParameterDirection.Input, 0, 0, "USER_EMAIL", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            this._commandCollection[3].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@USER_EMAIL", global::System.Data.SqlDbType.VarChar, 20, global::System.Data.ParameterDirection.Input, 0, 0, "USER_NAME", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            this._commandCollection[3].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@USER_NAME", global::System.Data.SqlDbType.VarChar, 20, global::System.Data.ParameterDirection.Input, 0, 0, "USER_SURNAME", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            this._commandCollection[3].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@USER_SURNAME", global::System.Data.SqlDbType.VarChar, 15, global::System.Data.ParameterDirection.Input, 0, 0, "USER_IP", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            this._commandCollection[3].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@USER_IP", global::System.Data.SqlDbType.Int, 4, global::System.Data.ParameterDirection.Input, 0, 0, "USER_WIN_PLAYER", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            this._commandCollection[3].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@USER_WIN_PLAYER", global::System.Data.SqlDbType.Int, 4, global::System.Data.ParameterDirection.Input, 0, 0, "USER_WIN_COMPUTER", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            this._commandCollection[3].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@USER_WIN_COMPUTER", global::System.Data.SqlDbType.Int, 4, global::System.Data.ParameterDirection.Input, 0, 0, "USER_DRAW_PLAYER", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            this._commandCollection[3].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@USER_DRAW_PLAYER", global::System.Data.SqlDbType.Int, 4, global::System.Data.ParameterDirection.Input, 0, 0, "USER_DRAW_COMPUTER", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            this._commandCollection[3].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@USER_DRAW_COMPUTER", global::System.Data.SqlDbType.Int, 4, global::System.Data.ParameterDirection.Input, 0, 0, "USER_LOSE_PLAYER", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            this._commandCollection[3].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@USER_LOSE_PLAYER", global::System.Data.SqlDbType.Int, 4, global::System.Data.ParameterDirection.Input, 0, 0, "USER_LOSE_COMPUTER", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            this._commandCollection[3].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@USER_LOSE_COMPUTER", global::System.Data.SqlDbType.Int, 4, global::System.Data.ParameterDirection.Input, 0, 0, "USER_XP", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._commandCollection[3].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@USER_LOGIN", global::System.Data.SqlDbType.VarChar, 20, global::System.Data.ParameterDirection.Input, 0, 0, "USER_LOGIN", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._commandCollection[3].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@USER_PASSWORD", global::System.Data.SqlDbType.VarChar, 40, global::System.Data.ParameterDirection.Input, 0, 0, "USER_PASSWORD", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._commandCollection[3].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@USER_EMAIL", global::System.Data.SqlDbType.VarChar, 50, global::System.Data.ParameterDirection.Input, 0, 0, "USER_EMAIL", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._commandCollection[3].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@USER_NAME", global::System.Data.SqlDbType.VarChar, 20, global::System.Data.ParameterDirection.Input, 0, 0, "USER_NAME", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._commandCollection[3].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@USER_SURNAME", global::System.Data.SqlDbType.VarChar, 20, global::System.Data.ParameterDirection.Input, 0, 0, "USER_SURNAME", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._commandCollection[3].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@USER_IP", global::System.Data.SqlDbType.VarChar, 15, global::System.Data.ParameterDirection.Input, 0, 0, "USER_IP", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._commandCollection[3].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@USER_WIN_PLAYER", global::System.Data.SqlDbType.Int, 4, global::System.Data.ParameterDirection.Input, 0, 0, "USER_WIN_PLAYER", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._commandCollection[3].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@USER_WIN_COMPUTER", global::System.Data.SqlDbType.Int, 4, global::System.Data.ParameterDirection.Input, 0, 0, "USER_WIN_COMPUTER", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._commandCollection[3].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@USER_DRAW_PLAYER", global::System.Data.SqlDbType.Int, 4, global::System.Data.ParameterDirection.Input, 0, 0, "USER_DRAW_PLAYER", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._commandCollection[3].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@USER_DRAW_COMPUTER", global::System.Data.SqlDbType.Int, 4, global::System.Data.ParameterDirection.Input, 0, 0, "USER_DRAW_COMPUTER", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._commandCollection[3].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@USER_LOSE_PLAYER", global::System.Data.SqlDbType.Int, 4, global::System.Data.ParameterDirection.Input, 0, 0, "USER_LOSE_PLAYER", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._commandCollection[3].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@USER_LOSE_COMPUTER", global::System.Data.SqlDbType.Int, 4, global::System.Data.ParameterDirection.Input, 0, 0, "USER_LOSE_COMPUTER", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._commandCollection[3].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@USER_XP", global::System.Data.SqlDbType.Int, 4, global::System.Data.ParameterDirection.Input, 0, 0, "USER_XP", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._commandCollection[4] = new global::System.Data.SqlClient.SqlCommand();
             this._commandCollection[4].Connection = this.Connection;
             this._commandCollection[4].CommandText = @"UPDATE    [USER]
@@ -2615,82 +2618,82 @@ WHERE     (USER_ID = @Original_USER_ID);";
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Insert, false)]
-        public virtual int InsertQuery(string USER_ID, string USER_LOGIN, string USER_PASSWORD, string USER_EMAIL, string USER_NAME, string USER_SURNAME, global::System.Nullable<int> USER_IP, global::System.Nullable<int> USER_WIN_PLAYER, global::System.Nullable<int> USER_WIN_COMPUTER, global::System.Nullable<int> USER_DRAW_PLAYER, global::System.Nullable<int> USER_DRAW_COMPUTER, global::System.Nullable<int> USER_LOSE_PLAYER, global::System.Nullable<int> USER_LOSE_COMPUTER) {
+        public virtual int InsertQuery(string USER_LOGIN, string USER_PASSWORD, string USER_EMAIL, string USER_NAME, string USER_SURNAME, string USER_IP, global::System.Nullable<int> USER_WIN_PLAYER, global::System.Nullable<int> USER_WIN_COMPUTER, global::System.Nullable<int> USER_DRAW_PLAYER, global::System.Nullable<int> USER_DRAW_COMPUTER, global::System.Nullable<int> USER_LOSE_PLAYER, global::System.Nullable<int> USER_LOSE_COMPUTER, global::System.Nullable<int> USER_XP) {
             global::System.Data.SqlClient.SqlCommand command = this.CommandCollection[3];
-            if ((USER_ID == null)) {
+            if ((USER_LOGIN == null)) {
                 command.Parameters[0].Value = global::System.DBNull.Value;
             }
             else {
-                command.Parameters[0].Value = ((string)(USER_ID));
+                command.Parameters[0].Value = ((string)(USER_LOGIN));
             }
-            if ((USER_LOGIN == null)) {
+            if ((USER_PASSWORD == null)) {
                 command.Parameters[1].Value = global::System.DBNull.Value;
             }
             else {
-                command.Parameters[1].Value = ((string)(USER_LOGIN));
+                command.Parameters[1].Value = ((string)(USER_PASSWORD));
             }
-            if ((USER_PASSWORD == null)) {
+            if ((USER_EMAIL == null)) {
                 command.Parameters[2].Value = global::System.DBNull.Value;
             }
             else {
-                command.Parameters[2].Value = ((string)(USER_PASSWORD));
+                command.Parameters[2].Value = ((string)(USER_EMAIL));
             }
-            if ((USER_EMAIL == null)) {
+            if ((USER_NAME == null)) {
                 command.Parameters[3].Value = global::System.DBNull.Value;
             }
             else {
-                command.Parameters[3].Value = ((string)(USER_EMAIL));
+                command.Parameters[3].Value = ((string)(USER_NAME));
             }
-            if ((USER_NAME == null)) {
+            if ((USER_SURNAME == null)) {
                 command.Parameters[4].Value = global::System.DBNull.Value;
             }
             else {
-                command.Parameters[4].Value = ((string)(USER_NAME));
+                command.Parameters[4].Value = ((string)(USER_SURNAME));
             }
-            if ((USER_SURNAME == null)) {
+            if ((USER_IP == null)) {
                 command.Parameters[5].Value = global::System.DBNull.Value;
             }
             else {
-                command.Parameters[5].Value = ((string)(USER_SURNAME));
+                command.Parameters[5].Value = ((string)(USER_IP));
             }
-            if ((USER_IP.HasValue == true)) {
-                command.Parameters[6].Value = ((int)(USER_IP.Value));
+            if ((USER_WIN_PLAYER.HasValue == true)) {
+                command.Parameters[6].Value = ((int)(USER_WIN_PLAYER.Value));
             }
             else {
                 command.Parameters[6].Value = global::System.DBNull.Value;
             }
-            if ((USER_WIN_PLAYER.HasValue == true)) {
-                command.Parameters[7].Value = ((int)(USER_WIN_PLAYER.Value));
+            if ((USER_WIN_COMPUTER.HasValue == true)) {
+                command.Parameters[7].Value = ((int)(USER_WIN_COMPUTER.Value));
             }
             else {
                 command.Parameters[7].Value = global::System.DBNull.Value;
             }
-            if ((USER_WIN_COMPUTER.HasValue == true)) {
-                command.Parameters[8].Value = ((int)(USER_WIN_COMPUTER.Value));
+            if ((USER_DRAW_PLAYER.HasValue == true)) {
+                command.Parameters[8].Value = ((int)(USER_DRAW_PLAYER.Value));
             }
             else {
                 command.Parameters[8].Value = global::System.DBNull.Value;
             }
-            if ((USER_DRAW_PLAYER.HasValue == true)) {
-                command.Parameters[9].Value = ((int)(USER_DRAW_PLAYER.Value));
+            if ((USER_DRAW_COMPUTER.HasValue == true)) {
+                command.Parameters[9].Value = ((int)(USER_DRAW_COMPUTER.Value));
             }
             else {
                 command.Parameters[9].Value = global::System.DBNull.Value;
             }
-            if ((USER_DRAW_COMPUTER.HasValue == true)) {
-                command.Parameters[10].Value = ((int)(USER_DRAW_COMPUTER.Value));
+            if ((USER_LOSE_PLAYER.HasValue == true)) {
+                command.Parameters[10].Value = ((int)(USER_LOSE_PLAYER.Value));
             }
             else {
                 command.Parameters[10].Value = global::System.DBNull.Value;
             }
-            if ((USER_LOSE_PLAYER.HasValue == true)) {
-                command.Parameters[11].Value = ((int)(USER_LOSE_PLAYER.Value));
+            if ((USER_LOSE_COMPUTER.HasValue == true)) {
+                command.Parameters[11].Value = ((int)(USER_LOSE_COMPUTER.Value));
             }
             else {
                 command.Parameters[11].Value = global::System.DBNull.Value;
             }
-            if ((USER_LOSE_COMPUTER.HasValue == true)) {
-                command.Parameters[12].Value = ((int)(USER_LOSE_COMPUTER.Value));
+            if ((USER_XP.HasValue == true)) {
+                command.Parameters[12].Value = ((int)(USER_XP.Value));
             }
             else {
                 command.Parameters[12].Value = global::System.DBNull.Value;
