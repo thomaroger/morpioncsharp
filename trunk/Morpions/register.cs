@@ -70,6 +70,9 @@ namespace Morpions
                 register.ActiveForm.Close();
             }
 
+            User user = new User(1,login,password,email,name,surname,"192.168.0.1",0,0,0,0,0,0,0);
+            user.AddUser();
+
         }
 
     }
