@@ -116,12 +116,11 @@ namespace Morpions
         }
 
         //constructeur
-        public User(int VUSER_ID, string VUSER_LOGIN, string VUSER_PASSWORD, string VUSER_EMAIL, string VUSER_NAME,
+        public User(string VUSER_LOGIN, string VUSER_PASSWORD, string VUSER_EMAIL, string VUSER_NAME,
                     string VUSER_SURNAME, string VUSER_IP, int VUSER_WIN_PLAYER, int VUSER_WIN_COMPUTER,
                     int VUSER_DRAW_PLAYER, int VUSER_DRAW_COMPUTER, int VUSER_LOSE_PLAYER, int VUSER_LOSE_COMPUTER,
                     int VUSER_XP)
         {
-            USER_ID = VUSER_ID;
             USER_LOGIN = VUSER_LOGIN;
             USER_PASSWORD = VUSER_PASSWORD;
             USER_EMAIL = VUSER_EMAIL;
@@ -148,7 +147,6 @@ namespace Morpions
                 if (!table.Rows.Count.Equals(0))
                 {
                     BDD_Morpions.USERRow LigneData = (BDD_Morpions.USERRow)table.Rows[0];
-                    USER_ID = LigneData.USER_ID;
                     USER_ID = LigneData.USER_ID;
                     USER_LOGIN = LigneData.USER_LOGIN;
                     USER_PASSWORD = LigneData.USER_PASSWORD;

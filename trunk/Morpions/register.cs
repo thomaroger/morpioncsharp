@@ -66,12 +66,14 @@ namespace Morpions
                 MessageBox.Show(msgbox, "Erreur", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
             else {
+                User user = new User(login, password, email, name, surname, "192.168.0.1", 0, 0, 0, 0, 0, 0, 0);
+                user.AddUser();
                 MessageBox.Show("Enregistrement effectué", "Félicitation", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 register.ActiveForm.Close();
+
             }
 
-            User user = new User(1,login,password,email,name,surname,"192.168.0.1",0,0,0,0,0,0,0);
-            user.AddUser();
+            
 
         }
 

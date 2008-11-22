@@ -48,6 +48,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BDD_Morpions.cs">
+      <DependentUpon>BDD_Morpions.xsd</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="BDD_Morpions.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
