@@ -115,6 +115,9 @@
       <LastGenOutput>BDD_Morpions.Designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
     </None>
+    <None Include="BDD_Morpions.xss">
+      <DependentUpon>BDD_Morpions.xsd</DependentUpon>
+    </None>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>

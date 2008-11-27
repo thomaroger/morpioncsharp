@@ -147,6 +147,7 @@
             this.Controls.Add(this.bt_submit);
             this.Font = new System.Drawing.Font("Georgia", 10F);
             this.Name = "Form1";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Morpion : Connexion";
             this.ResumeLayout(false);
             this.PerformLayout();

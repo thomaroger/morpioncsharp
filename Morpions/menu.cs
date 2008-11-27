@@ -27,5 +27,12 @@ namespace Morpions
             un_joueur op = new un_joueur();
             op.Show();
         }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+            menu.ActiveForm.Close();
+            //deux_joueur op = new deux_joueur();
+            //op.Show();
+        }
     }
 }
