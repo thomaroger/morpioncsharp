@@ -215,6 +215,7 @@
             this.Controls.Add(this.lb_login);
             this.Controls.Add(this.lb_register);
             this.Name = "register";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Morpion : Inscription";
             this.ResumeLayout(false);
             this.PerformLayout();

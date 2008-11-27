@@ -68,6 +68,7 @@
             this.label2.Size = new System.Drawing.Size(69, 17);
             this.label2.TabIndex = 17;
             this.label2.Text = "2 Joueurs";
+            this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
             // label3
             // 
@@ -100,6 +101,7 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.bt_close);
             this.Name = "menu";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "menu";
             this.ResumeLayout(false);
             this.PerformLayout();
