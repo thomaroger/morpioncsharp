@@ -19,21 +19,21 @@ namespace Morpions
         private void label3_Click(object sender, EventArgs e)
         {
             un_joueur_menu.ActiveForm.Close();
-            un_joueur op = new un_joueur();
+            un_joueur op = new un_joueur(1);
             op.Show();
         }
 
         private void label2_Click(object sender, EventArgs e)
         {
             un_joueur_menu.ActiveForm.Close();
-            un_joueur op = new un_joueur();
+            un_joueur op = new un_joueur(1);
             op.Show();
         }
 
         private void label1_Click(object sender, EventArgs e)
         {
             un_joueur_menu.ActiveForm.Close();
-            un_joueur op = new un_joueur();
+            un_joueur op = new un_joueur(1);
             op.Show();
         }
 

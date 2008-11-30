@@ -87,6 +87,7 @@
       <DependentUpon>MesScores.rpt</DependentUpon>
       <SubType>Component</SubType>
     </Compile>
+    <Compile Include="morpions.cs" />
     <Compile Include="password_forget.cs">
       <SubType>Form</SubType>
     </Compile>
