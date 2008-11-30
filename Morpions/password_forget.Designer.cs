@@ -59,7 +59,6 @@
             this.tb_name.Font = new System.Drawing.Font("Georgia", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tb_name.Location = new System.Drawing.Point(150, 89);
             this.tb_name.Name = "tb_name";
-            this.tb_name.PasswordChar = '*';
             this.tb_name.Size = new System.Drawing.Size(119, 21);
             this.tb_name.TabIndex = 14;
             // 

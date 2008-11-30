@@ -34,5 +34,11 @@ namespace Morpions
             //deux_joueur op = new deux_joueur();
             //op.Show();
         }
+
+        private void lblScores_Click(object sender, EventArgs e)
+        {
+            score op = new score();
+            op.ShowDialog();
+        }
     }
 }

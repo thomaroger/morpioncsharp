@@ -7,6 +7,12 @@ using System.Linq;
 using System.Text;
 using System.Windows.Forms;
 
+//using pour l'email
+using System.Net.Mail;
+using System.Net;
+using System.Data.Sql;
+using System.Data.SqlClient;
+
 namespace Morpions
 {
     public partial class password_forget : Form
@@ -50,6 +56,47 @@ namespace Morpions
             }
             else
             {
+                //Envoi de l'email
+                // Creation du mail
+                MailMessage msg = null;
+                //Expediteur
+                string from = "projet.morpions@gmail.com";
+                //Recepteur
+                string to = tb_email.Text;
+                // Sujet
+                string sujet = "Recuperation de votre mot de passe";            
+
+                // Chaîne de connexion
+                string connectString = "database=BDD_MORPIONS;server=(local);User ID=BACK;pwd=xxxxxx";
+                // Objet connection
+                SqlConnection connection = new SqlConnection(connectString);
+                // Ouverture
+                connection.Open();
+                // Objet Command
+                SqlCommand command = new SqlCommand("SELECT USER_PASSWORD FROM USER WHERE USER_SURNAME = " + tb_name + " AND USER_LOGIN = " + tb_login, connection);
+                // Objet DataReader
+                SqlDataReader reader = command.ExecuteReader();
+                Object[] row = null;
+                while (reader.Read())
+                {
+                    row = new Object[reader.FieldCount];
+                    reader.GetValues(row);
+                }
+                
+                // Fermeture
+                connection.Close();
+
+                //Corps du mail
+                string Body = "Votre mot de passe est :";
+
+                msg = new MailMessage(from, to, sujet, Body);
+
+                SmtpClient objSC = new SmtpClient("smtp.gmail.com", 587);
+
+                objSC.Credentials = new NetworkCredential("projet.morpions@gmail.com", "lose007*");
+                //objSC.Send(msg);
+                objSC.SendAsync(msg, "Envoie en cours");
+
                 msgbox = "Génération de votre mot de passe réussie. \n";
                 msgbox += "Un email vous a été envoyé. \n";
                 MessageBox.Show(msgbox, "Information", MessageBoxButtons.OK, MessageBoxIcon.Information);

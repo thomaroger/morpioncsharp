@@ -33,6 +33,7 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
+            this.lblScores = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // bt_close
@@ -63,7 +64,7 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Georgia", 10F);
-            this.label2.Location = new System.Drawing.Point(112, 96);
+            this.label2.Location = new System.Drawing.Point(108, 84);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(69, 17);
             this.label2.TabIndex = 17;
@@ -74,7 +75,7 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Georgia", 10F);
-            this.label3.Location = new System.Drawing.Point(38, 167);
+            this.label3.Location = new System.Drawing.Point(38, 135);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(216, 17);
             this.label3.TabIndex = 18;
@@ -84,17 +85,29 @@
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Georgia", 10F);
-            this.label4.Location = new System.Drawing.Point(93, 222);
+            this.label4.Location = new System.Drawing.Point(93, 178);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(106, 17);
             this.label4.TabIndex = 19;
             this.label4.Text = "Top 10 Joueurs";
+            // 
+            // lblScores
+            // 
+            this.lblScores.AutoSize = true;
+            this.lblScores.Font = new System.Drawing.Font("Georgia", 10F);
+            this.lblScores.Location = new System.Drawing.Point(108, 226);
+            this.lblScores.Name = "lblScores";
+            this.lblScores.Size = new System.Drawing.Size(77, 17);
+            this.lblScores.TabIndex = 20;
+            this.lblScores.Text = "Mes scores";
+            this.lblScores.Click += new System.EventHandler(this.lblScores_Click);
             // 
             // menu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(292, 320);
+            this.Controls.Add(this.lblScores);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
@@ -115,5 +128,6 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label lblScores;
     }
 }
