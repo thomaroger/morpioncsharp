@@ -24,7 +24,7 @@ namespace Morpions
         private void label1_Click(object sender, EventArgs e)
         {
             menu.ActiveForm.Close();
-            un_joueur op = new un_joueur();
+            un_joueur_menu op = new un_joueur_menu();
             op.Show();
         }
 
