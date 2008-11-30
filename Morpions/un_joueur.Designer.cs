@@ -39,6 +39,7 @@
             this.morpion_1_1 = new System.Windows.Forms.Button();
             this.morpion_3_3 = new System.Windows.Forms.Button();
             this.bt_close = new System.Windows.Forms.Button();
+            this.label_morpions = new System.Windows.Forms.Label();
             this.Morpion.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -48,7 +49,7 @@
             this.Morpion.ColumnCount = 3;
             this.Morpion.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 49.6F));
             this.Morpion.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50.4F));
-            this.Morpion.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 133F));
+            this.Morpion.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 135F));
             this.Morpion.Controls.Add(this.morpion_3_2, 1, 2);
             this.Morpion.Controls.Add(this.morpion_3_1, 0, 2);
             this.Morpion.Controls.Add(this.morpion_2_3, 2, 1);
@@ -73,9 +74,9 @@
             this.morpion_3_2.BackColor = System.Drawing.SystemColors.Control;
             this.morpion_3_2.Font = new System.Drawing.Font("Georgia", 50F);
             this.morpion_3_2.ForeColor = System.Drawing.Color.White;
-            this.morpion_3_2.Location = new System.Drawing.Point(131, 237);
+            this.morpion_3_2.Location = new System.Drawing.Point(130, 237);
             this.morpion_3_2.Name = "morpion_3_2";
-            this.morpion_3_2.Size = new System.Drawing.Size(123, 113);
+            this.morpion_3_2.Size = new System.Drawing.Size(122, 113);
             this.morpion_3_2.TabIndex = 7;
             this.morpion_3_2.UseVisualStyleBackColor = false;
             this.morpion_3_2.Click += new System.EventHandler(this.morpion_3_2_Click);
@@ -87,7 +88,7 @@
             this.morpion_3_1.ForeColor = System.Drawing.Color.White;
             this.morpion_3_1.Location = new System.Drawing.Point(4, 237);
             this.morpion_3_1.Name = "morpion_3_1";
-            this.morpion_3_1.Size = new System.Drawing.Size(120, 113);
+            this.morpion_3_1.Size = new System.Drawing.Size(119, 113);
             this.morpion_3_1.TabIndex = 6;
             this.morpion_3_1.UseVisualStyleBackColor = false;
             this.morpion_3_1.Click += new System.EventHandler(this.morpion_3_1_Click);
@@ -97,7 +98,7 @@
             this.morpion_2_3.BackColor = System.Drawing.SystemColors.Control;
             this.morpion_2_3.Font = new System.Drawing.Font("Georgia", 50F);
             this.morpion_2_3.ForeColor = System.Drawing.Color.White;
-            this.morpion_2_3.Location = new System.Drawing.Point(261, 116);
+            this.morpion_2_3.Location = new System.Drawing.Point(259, 116);
             this.morpion_2_3.Name = "morpion_2_3";
             this.morpion_2_3.Size = new System.Drawing.Size(128, 114);
             this.morpion_2_3.TabIndex = 5;
@@ -109,9 +110,9 @@
             this.morpion_2_2.BackColor = System.Drawing.SystemColors.Control;
             this.morpion_2_2.Font = new System.Drawing.Font("Georgia", 50F);
             this.morpion_2_2.ForeColor = System.Drawing.Color.White;
-            this.morpion_2_2.Location = new System.Drawing.Point(131, 116);
+            this.morpion_2_2.Location = new System.Drawing.Point(130, 116);
             this.morpion_2_2.Name = "morpion_2_2";
-            this.morpion_2_2.Size = new System.Drawing.Size(123, 114);
+            this.morpion_2_2.Size = new System.Drawing.Size(122, 114);
             this.morpion_2_2.TabIndex = 4;
             this.morpion_2_2.UseVisualStyleBackColor = false;
             this.morpion_2_2.Click += new System.EventHandler(this.morpion_2_2_Click);
@@ -123,7 +124,7 @@
             this.morpion_2_1.ForeColor = System.Drawing.Color.White;
             this.morpion_2_1.Location = new System.Drawing.Point(4, 116);
             this.morpion_2_1.Name = "morpion_2_1";
-            this.morpion_2_1.Size = new System.Drawing.Size(120, 114);
+            this.morpion_2_1.Size = new System.Drawing.Size(119, 114);
             this.morpion_2_1.TabIndex = 3;
             this.morpion_2_1.UseVisualStyleBackColor = false;
             this.morpion_2_1.Click += new System.EventHandler(this.morpion_2_1_Click);
@@ -133,7 +134,7 @@
             this.morpion_1_3.BackColor = System.Drawing.SystemColors.Control;
             this.morpion_1_3.Font = new System.Drawing.Font("Georgia", 50F);
             this.morpion_1_3.ForeColor = System.Drawing.Color.White;
-            this.morpion_1_3.Location = new System.Drawing.Point(261, 4);
+            this.morpion_1_3.Location = new System.Drawing.Point(259, 4);
             this.morpion_1_3.Name = "morpion_1_3";
             this.morpion_1_3.Size = new System.Drawing.Size(128, 105);
             this.morpion_1_3.TabIndex = 2;
@@ -145,9 +146,9 @@
             this.morpion_1_2.BackColor = System.Drawing.SystemColors.Control;
             this.morpion_1_2.Font = new System.Drawing.Font("Georgia", 50F);
             this.morpion_1_2.ForeColor = System.Drawing.Color.White;
-            this.morpion_1_2.Location = new System.Drawing.Point(131, 4);
+            this.morpion_1_2.Location = new System.Drawing.Point(130, 4);
             this.morpion_1_2.Name = "morpion_1_2";
-            this.morpion_1_2.Size = new System.Drawing.Size(123, 105);
+            this.morpion_1_2.Size = new System.Drawing.Size(122, 105);
             this.morpion_1_2.TabIndex = 1;
             this.morpion_1_2.UseVisualStyleBackColor = false;
             this.morpion_1_2.Click += new System.EventHandler(this.morpion_1_2_Click);
@@ -159,7 +160,7 @@
             this.morpion_1_1.ForeColor = System.Drawing.Color.White;
             this.morpion_1_1.Location = new System.Drawing.Point(4, 4);
             this.morpion_1_1.Name = "morpion_1_1";
-            this.morpion_1_1.Size = new System.Drawing.Size(120, 105);
+            this.morpion_1_1.Size = new System.Drawing.Size(119, 105);
             this.morpion_1_1.TabIndex = 0;
             this.morpion_1_1.UseVisualStyleBackColor = false;
             this.morpion_1_1.Click += new System.EventHandler(this.morpion_1_1_Click);
@@ -169,7 +170,7 @@
             this.morpion_3_3.BackColor = System.Drawing.SystemColors.Control;
             this.morpion_3_3.Font = new System.Drawing.Font("Georgia", 50F);
             this.morpion_3_3.ForeColor = System.Drawing.Color.White;
-            this.morpion_3_3.Location = new System.Drawing.Point(261, 237);
+            this.morpion_3_3.Location = new System.Drawing.Point(259, 237);
             this.morpion_3_3.Name = "morpion_3_3";
             this.morpion_3_3.Size = new System.Drawing.Size(128, 113);
             this.morpion_3_3.TabIndex = 8;
@@ -181,7 +182,7 @@
             this.bt_close.BackColor = System.Drawing.Color.SkyBlue;
             this.bt_close.Font = new System.Drawing.Font("Georgia", 12F);
             this.bt_close.ForeColor = System.Drawing.Color.Red;
-            this.bt_close.Location = new System.Drawing.Point(177, 406);
+            this.bt_close.Location = new System.Drawing.Point(175, 487);
             this.bt_close.Name = "bt_close";
             this.bt_close.Size = new System.Drawing.Size(108, 35);
             this.bt_close.TabIndex = 16;
@@ -189,11 +190,22 @@
             this.bt_close.UseVisualStyleBackColor = false;
             this.bt_close.Click += new System.EventHandler(this.bt_close_Click);
             // 
+            // label_morpions
+            // 
+            this.label_morpions.AutoSize = true;
+            this.label_morpions.Font = new System.Drawing.Font("Georgia", 50F);
+            this.label_morpions.ForeColor = System.Drawing.Color.Red;
+            this.label_morpions.Location = new System.Drawing.Point(108, 394);
+            this.label_morpions.Name = "label_morpions";
+            this.label_morpions.Size = new System.Drawing.Size(0, 77);
+            this.label_morpions.TabIndex = 17;
+            // 
             // un_joueur
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(463, 453);
+            this.ClientSize = new System.Drawing.Size(463, 534);
+            this.Controls.Add(this.label_morpions);
             this.Controls.Add(this.bt_close);
             this.Controls.Add(this.Morpion);
             this.Name = "un_joueur";
@@ -201,6 +213,7 @@
             this.Text = "un_joueur";
             this.Morpion.ResumeLayout(false);
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -217,6 +230,7 @@
         private System.Windows.Forms.Button morpion_1_3;
         private System.Windows.Forms.Button morpion_1_2;
         private System.Windows.Forms.Button morpion_3_3;
+        private System.Windows.Forms.Label label_morpions;
 
     }
 }

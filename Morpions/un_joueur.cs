@@ -16,6 +16,62 @@ namespace Morpions
         int joueur = 0;
         int joueur2 = 1;
 
+        public void ia(int[,] tab, int lvl) {
+            if (lvl == 1) { 
+            
+            }
+            else if (lvl == 2)
+            {
+
+            }
+            else { 
+            
+            }
+        } 
+
+        public void routine_victoire(int[,] tab) {
+            bool victory = false;
+            for (int i = 0; i < 3; i++)
+            {
+                for (int j = 0; j < 3; j++)
+                {
+                    Console.Write(tab[i, j]);
+                    Console.Write(" ");
+                }
+                Console.WriteLine();
+            }
+            for (int i = 0; i < 3; i++)
+            {
+                if (tab[i, 0] == tab[i, 1] && tab[i, 0] == tab[i, 2] && tab[i, 0]!=0)
+                {
+                    victory = true;
+                }
+                if (tab[0, i] == tab[1, i] && tab[0, i] == tab[2, i] && tab[0,i] != 0)
+                {
+                    victory = true;
+                }
+            }
+
+            if (tab[0, 0] == tab[1, 1] && tab[0, 0] == tab[2, 2] && tab[0, 0] != 0)
+            {
+                victory = true;
+            }
+
+            if (tab[0, 2] == tab[1, 1] && tab[0, 2] == tab[2, 0] && tab[0, 2] != 0)
+            {
+                victory = true;
+            }
+
+
+            if (victory)
+            {
+                label_morpions.Text = "Victory";
+            }
+            else {
+                ia(tab, niveau);
+            }
+        }
+
         public un_joueur()
         {
         }
@@ -35,7 +91,7 @@ namespace Morpions
             morpion_1_1.Text = "X";  
             morpion_1_1.Update();
             tab[0,0] = 1;
-     
+            routine_victoire(tab);
         }
 
         private void morpion_1_2_Click(object sender, EventArgs e)
@@ -43,8 +99,7 @@ namespace Morpions
             morpion_1_2.Text = "X";
             morpion_1_2.Update();
             tab[0, 1] = 1;
-
-
+            routine_victoire(tab);
         }
 
         private void morpion_1_3_Click(object sender, EventArgs e)
@@ -52,6 +107,7 @@ namespace Morpions
             morpion_1_3.Text = "X";
             morpion_1_3.Update();
             tab[0, 2] = 1;
+            routine_victoire(tab);
 
         }
 
@@ -60,6 +116,7 @@ namespace Morpions
             morpion_2_1.Text = "X";
             morpion_2_1.Update();
             tab[1, 0] = 1;
+            routine_victoire(tab);
         }
 
         private void morpion_2_2_Click(object sender, EventArgs e)
@@ -67,7 +124,7 @@ namespace Morpions
             morpion_2_2.Text = "X";
             morpion_2_2.Update();
             tab[1,1] = 1;
-
+            routine_victoire(tab);
         }
 
         private void morpion_2_3_Click(object sender, EventArgs e)
@@ -75,7 +132,7 @@ namespace Morpions
             morpion_2_3.Text = "X";
             morpion_2_3.Update();
             tab[1, 2] = 1;
-
+            routine_victoire(tab);
         }
 
         private void morpion_3_1_Click(object sender, EventArgs e)
@@ -83,7 +140,7 @@ namespace Morpions
             morpion_3_1.Text = "X";
             morpion_3_1.Update();
             tab[2, 0] = 1;
-
+            routine_victoire(tab);
         }
 
         private void morpion_3_2_Click(object sender, EventArgs e)
@@ -91,6 +148,7 @@ namespace Morpions
             morpion_3_2.Text = "X";
             morpion_3_2.Update();
             tab[2, 1] = 1;
+            routine_victoire(tab);
         }
 
         private void morpion_3_3_Click(object sender, EventArgs e)
@@ -98,6 +156,7 @@ namespace Morpions
             morpion_3_3.Text = "X";
             morpion_3_3.Update();
             tab[2, 2] = 1;
+            routine_victoire(tab);
         }
 
     }
