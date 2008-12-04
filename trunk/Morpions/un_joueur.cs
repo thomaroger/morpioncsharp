@@ -19,6 +19,7 @@ namespace Morpions
         public void ia(int[,] tab, int lvl) {
             bool tmp;
             if (lvl == 1) {
+                // Niveau Noobs
                 bool ok = false;
                 while (!ok) {
                     Random rndNumbers_x = new Random();
@@ -39,6 +40,14 @@ namespace Morpions
             }
             else if (lvl == 2)
             {
+                // Niveau RoXor
+                bool joue = false;
+                if (tab[0, 0] == 1 || tab[2, 2] == 1 || tab[0, 2] == 1 || tab[2, 0] == 1) {
+                    tab[1, 1] = 2;
+                    morpion_2_2.Text = "O";
+                    morpion_2_2.Update();
+                } 
+
 
             }
             else { 
