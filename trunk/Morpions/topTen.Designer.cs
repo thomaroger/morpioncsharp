@@ -291,7 +291,7 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Name = "topTen";
-            this.Text = "topTen";
+            this.Text = "Top 5 des meilleurs joueurs";
             this.Load += new System.EventHandler(this.topTen_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
