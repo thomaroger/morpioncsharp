@@ -27,7 +27,7 @@ namespace Morpions
             // Ouverture
             connection.Open();
             // Objet Command
-            SqlCommand command = new SqlCommand("SELECT [USER].USER_ID,[USER].USER_NAME,[SCORE_HISTORIQUE].HISTO_WIN_PLAYER FROM [USER],[SCORE_HISTORIQUE] WHERE [SCORE_HISTORIQUE].USER_ID= [USER].USER_ID ORDER BY [SCORE_HISTORIQUE].HISTO_WIN_PLAYER DESC,[SCORE_HISTORIQUE].HISTO_LOSE_PLAYER", connection);
+            SqlCommand command = new SqlCommand("SELECT [USER].USER_ID,[USER].USER_NAME,[SCORE_HISTORIQUE].HISTO_WIN_PLAYER,[SCORE_HISTORIQUE].HISTO_LOSE_PLAYER FROM [USER],[SCORE_HISTORIQUE] WHERE [SCORE_HISTORIQUE].USER_ID= [USER].USER_ID ORDER BY [SCORE_HISTORIQUE].HISTO_WIN_PLAYER DESC,[SCORE_HISTORIQUE].HISTO_LOSE_PLAYER ASC", connection);
             // Objet DataReader
             SqlDataReader reader = command.ExecuteReader();
             Object[] row = null;
@@ -40,24 +40,29 @@ namespace Morpions
                 switch (i)
                 {
                     case 1:
-                        lbNom1.Text = row.GetValue(1).ToString();
-                        lblWin1.Text = row.GetValue(2).ToString();
+                       lbNom1.Text = row.GetValue(1).ToString();
+                       lblWin1.Text = row.GetValue(2).ToString();
+                       lblLose1.Text = row.GetValue(3).ToString();
                      break;
                     case 2:
-                     lbNom2.Text = row.GetValue(1).ToString();
-                     lblWin2.Text = row.GetValue(2).ToString();
+                       lbNom2.Text = row.GetValue(1).ToString();
+                       lblWin2.Text = row.GetValue(2).ToString();
+                       lblLose2.Text = row.GetValue(3).ToString();
                      break;
                     case 3:
-                     lbNom3.Text = row.GetValue(1).ToString();
-                     lblWin3.Text = row.GetValue(2).ToString();
+                      lbNom3.Text = row.GetValue(1).ToString();
+                      lblWin3.Text = row.GetValue(2).ToString();
+                      lblLose3.Text = row.GetValue(3).ToString();
                      break;
                     case 4:
-                     lbNom4.Text = row.GetValue(1).ToString();
-                     lblWin4.Text = row.GetValue(2).ToString();
+                      lbNom4.Text = row.GetValue(1).ToString();
+                      lblWin4.Text = row.GetValue(2).ToString();
+                      lblLose4.Text = row.GetValue(3).ToString();
                      break;
                     case 5:
-                     lbNom5.Text = row.GetValue(1).ToString();
-                     lblWin5.Text = row.GetValue(2).ToString();
+                      lbNom5.Text = row.GetValue(1).ToString();
+                      lblWin5.Text = row.GetValue(2).ToString();
+                      lblLose5.Text = row.GetValue(3).ToString();
                      break;
                 }
 
