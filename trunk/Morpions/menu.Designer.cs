@@ -90,6 +90,7 @@
             this.label4.Size = new System.Drawing.Size(106, 17);
             this.label4.TabIndex = 19;
             this.label4.Text = "Top 10 Joueurs";
+            this.label4.Click += new System.EventHandler(this.label4_Click);
             // 
             // lblScores
             // 

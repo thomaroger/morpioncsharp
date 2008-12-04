@@ -40,5 +40,11 @@ namespace Morpions
             score op = new score();
             op.ShowDialog();
         }
+
+        private void label4_Click(object sender, EventArgs e)
+        {
+            topTen op = new topTen();
+            op.ShowDialog();
+        }
     }
 }
