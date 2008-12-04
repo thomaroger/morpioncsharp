@@ -76,18 +76,20 @@ namespace Morpions
                 SqlCommand command = new SqlCommand("SELECT USER_PASSWORD FROM [USER] WHERE USER_SURNAME = '" + tb_name.Text  + "' AND USER_LOGIN = '" + tb_login.Text + "'", connection);
                 // Objet DataReader
                 SqlDataReader reader = command.ExecuteReader();
-                string[] row = null;
+                Object[] row = null;
+                string pass = null;
                 while (reader.Read())
                 {
-                    row = new string[0];
+                    row = new Object[reader.FieldCount];
                     reader.GetValues(row);
+                    pass = row.GetValue(0).ToString();
                 }
                 
                 // Fermeture
                 connection.Close();
 
                 //Corps du mail
-                string Body = "Votre mot de passe est :";
+                string Body = "Votre mot de passe est :" + pass;
 
                 msg = new MailMessage(from, to, sujet, Body);
 
