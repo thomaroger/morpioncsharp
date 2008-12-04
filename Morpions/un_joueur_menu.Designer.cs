@@ -66,7 +66,7 @@
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(160, 17);
             this.label2.TabIndex = 18;
-            this.label2.Text = "Niveau RoXor (Yohann)";
+            this.label2.Text = "Niveau Yohann (RoXor)";
             this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
             // label3
@@ -75,9 +75,9 @@
             this.label3.Font = new System.Drawing.Font("Georgia", 10F);
             this.label3.Location = new System.Drawing.Point(69, 51);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(154, 17);
+            this.label3.Size = new System.Drawing.Size(157, 17);
             this.label3.TabIndex = 19;
-            this.label3.Text = "Niveau Nicolas : Noobs";
+            this.label3.Text = "Niveau Nicolas (Noobs)";
             this.label3.Click += new System.EventHandler(this.label3_Click);
             // 
             // un_joueur_menu
