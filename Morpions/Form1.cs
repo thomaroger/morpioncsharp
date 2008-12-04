@@ -44,18 +44,21 @@ namespace Morpions
             // Ouverture
             connection.Open();
             // Objet Command
-            SqlCommand command = new SqlCommand("SELECT USER_LOGIN,USER_PASSWORD FROM [USER] WHERE USER_SURNAME = '" + tb_password.Text + "' AND USER_LOGIN = '" + tb_login.Text + "'", connection);
+            SqlCommand command = new SqlCommand("SELECT USER_LOGIN,USER_PASSWORD,USER_ID FROM [USER] WHERE USER_SURNAME = '" + tb_password.Text + "' AND USER_LOGIN = '" + tb_login.Text + "'", connection);
             // Objet DataReader
             SqlDataReader reader = command.ExecuteReader();
             Object[] row = null;
             string pass = null;
             string login = null;
+            int id = 0;
             while (reader.Read())
             {
                 row = new Object[reader.FieldCount];
                 reader.GetValues(row);
                 login = row.GetValue(0).ToString();
                 pass = row.GetValue(1).ToString();
+                id = int.Parse(row.GetValue(2).ToString());
+
             }
 
             // Fermeture
