@@ -67,19 +67,19 @@ namespace Morpions
                 string sujet = "Recuperation de votre mot de passe";            
 
                 // Chaîne de connexion
-                string connectString = "database=BDD_MORPIONS;server=(local);User ID=BACK;pwd=xxxxxx";
+                string connectString = "database=Morpions;server=localhost;Integrated Security=true";
                 // Objet connection
                 SqlConnection connection = new SqlConnection(connectString);
                 // Ouverture
                 connection.Open();
                 // Objet Command
-                SqlCommand command = new SqlCommand("SELECT USER_PASSWORD FROM USER WHERE USER_SURNAME = " + tb_name + " AND USER_LOGIN = " + tb_login, connection);
+                SqlCommand command = new SqlCommand("SELECT USER_PASSWORD FROM [USER] WHERE USER_SURNAME = '" + tb_name.Text  + "' AND USER_LOGIN = '" + tb_login.Text + "'", connection);
                 // Objet DataReader
                 SqlDataReader reader = command.ExecuteReader();
-                Object[] row = null;
+                string[] row = null;
                 while (reader.Read())
                 {
-                    row = new Object[reader.FieldCount];
+                    row = new string[0];
                     reader.GetValues(row);
                 }
                 
@@ -100,6 +100,8 @@ namespace Morpions
                 msgbox = "Génération de votre mot de passe réussie. \n";
                 msgbox += "Un email vous a été envoyé. \n";
                 MessageBox.Show(msgbox, "Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                
+                //fermeture de la forme
                 password_forget.ActiveForm.Close();
             }
         }

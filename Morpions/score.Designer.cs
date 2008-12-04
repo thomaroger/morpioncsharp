@@ -30,26 +30,27 @@
         {
             this.crystalReportViewer1 = new CrystalDecisions.Windows.Forms.CrystalReportViewer();
             this.bt_close = new System.Windows.Forms.Button();
+            this.MesScores1 = new Morpions.MesScores();
             this.SuspendLayout();
             // 
             // crystalReportViewer1
             // 
-            this.crystalReportViewer1.ActiveViewIndex = -1;
+            this.crystalReportViewer1.ActiveViewIndex = 0;
             this.crystalReportViewer1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.crystalReportViewer1.Dock = System.Windows.Forms.DockStyle.Top;
             this.crystalReportViewer1.Location = new System.Drawing.Point(0, 0);
             this.crystalReportViewer1.Name = "crystalReportViewer1";
-            this.crystalReportViewer1.SelectionFormula = "";
-            this.crystalReportViewer1.Size = new System.Drawing.Size(927, 392);
+            this.crystalReportViewer1.ReportSource = this.MesScores1;
+            this.crystalReportViewer1.Size = new System.Drawing.Size(927, 471);
             this.crystalReportViewer1.TabIndex = 0;
-            this.crystalReportViewer1.ViewTimeSelectionFormula = "";
+            this.crystalReportViewer1.Load += new System.EventHandler(this.crystalReportViewer1_Load);
             // 
             // bt_close
             // 
             this.bt_close.BackColor = System.Drawing.Color.SkyBlue;
             this.bt_close.Font = new System.Drawing.Font("Georgia", 12F);
             this.bt_close.ForeColor = System.Drawing.Color.Red;
-            this.bt_close.Location = new System.Drawing.Point(807, 398);
+            this.bt_close.Location = new System.Drawing.Point(807, 477);
             this.bt_close.Name = "bt_close";
             this.bt_close.Size = new System.Drawing.Size(108, 35);
             this.bt_close.TabIndex = 16;
@@ -61,7 +62,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(927, 437);
+            this.ClientSize = new System.Drawing.Size(927, 524);
             this.Controls.Add(this.bt_close);
             this.Controls.Add(this.crystalReportViewer1);
             this.Name = "score";
@@ -74,5 +75,6 @@
 
         private CrystalDecisions.Windows.Forms.CrystalReportViewer crystalReportViewer1;
         private System.Windows.Forms.Button bt_close;
+        private MesScores MesScores1;
     }
 }
