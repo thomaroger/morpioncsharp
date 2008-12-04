@@ -39,6 +39,14 @@
             this.lbNom3 = new System.Windows.Forms.Label();
             this.lbNom4 = new System.Windows.Forms.Label();
             this.lbNom5 = new System.Windows.Forms.Label();
+            this.label7 = new System.Windows.Forms.Label();
+            this.label8 = new System.Windows.Forms.Label();
+            this.label9 = new System.Windows.Forms.Label();
+            this.lblWin1 = new System.Windows.Forms.Label();
+            this.lblWin2 = new System.Windows.Forms.Label();
+            this.lblWin3 = new System.Windows.Forms.Label();
+            this.lblWin4 = new System.Windows.Forms.Label();
+            this.lblWin5 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // label1
@@ -104,53 +112,123 @@
             // lbNom1
             // 
             this.lbNom1.AutoSize = true;
-            this.lbNom1.Location = new System.Drawing.Point(147, 142);
+            this.lbNom1.Location = new System.Drawing.Point(144, 150);
             this.lbNom1.Name = "lbNom1";
-            this.lbNom1.Size = new System.Drawing.Size(43, 13);
+            this.lbNom1.Size = new System.Drawing.Size(0, 13);
             this.lbNom1.TabIndex = 6;
-            this.lbNom1.Text = "lbNom1";
             // 
             // lbNom2
             // 
             this.lbNom2.AutoSize = true;
-            this.lbNom2.Location = new System.Drawing.Point(147, 187);
+            this.lbNom2.Location = new System.Drawing.Point(144, 195);
             this.lbNom2.Name = "lbNom2";
-            this.lbNom2.Size = new System.Drawing.Size(43, 13);
+            this.lbNom2.Size = new System.Drawing.Size(0, 13);
             this.lbNom2.TabIndex = 7;
-            this.lbNom2.Text = "lbNom1";
             // 
             // lbNom3
             // 
             this.lbNom3.AutoSize = true;
-            this.lbNom3.Location = new System.Drawing.Point(147, 230);
+            this.lbNom3.Location = new System.Drawing.Point(144, 238);
             this.lbNom3.Name = "lbNom3";
-            this.lbNom3.Size = new System.Drawing.Size(43, 13);
+            this.lbNom3.Size = new System.Drawing.Size(0, 13);
             this.lbNom3.TabIndex = 8;
-            this.lbNom3.Text = "lbNom1";
             // 
             // lbNom4
             // 
             this.lbNom4.AutoSize = true;
-            this.lbNom4.Location = new System.Drawing.Point(147, 280);
+            this.lbNom4.Location = new System.Drawing.Point(144, 285);
             this.lbNom4.Name = "lbNom4";
-            this.lbNom4.Size = new System.Drawing.Size(43, 13);
+            this.lbNom4.Size = new System.Drawing.Size(0, 13);
             this.lbNom4.TabIndex = 9;
-            this.lbNom4.Text = "lbNom1";
             // 
             // lbNom5
             // 
             this.lbNom5.AutoSize = true;
-            this.lbNom5.Location = new System.Drawing.Point(147, 333);
+            this.lbNom5.Location = new System.Drawing.Point(144, 333);
             this.lbNom5.Name = "lbNom5";
-            this.lbNom5.Size = new System.Drawing.Size(43, 13);
+            this.lbNom5.Size = new System.Drawing.Size(0, 13);
             this.lbNom5.TabIndex = 10;
-            this.lbNom5.Text = "lbNom5";
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Location = new System.Drawing.Point(144, 89);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(29, 13);
+            this.label7.TabIndex = 11;
+            this.label7.Text = "Nom";
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Location = new System.Drawing.Point(303, 88);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(29, 13);
+            this.label8.TabIndex = 12;
+            this.label8.Text = "WIN";
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Location = new System.Drawing.Point(447, 89);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(35, 13);
+            this.label9.TabIndex = 13;
+            this.label9.Text = "LOSE";
+            // 
+            // lblWin1
+            // 
+            this.lblWin1.AutoSize = true;
+            this.lblWin1.Location = new System.Drawing.Point(262, 142);
+            this.lblWin1.Name = "lblWin1";
+            this.lblWin1.Size = new System.Drawing.Size(0, 13);
+            this.lblWin1.TabIndex = 14;
+            // 
+            // lblWin2
+            // 
+            this.lblWin2.AutoSize = true;
+            this.lblWin2.Location = new System.Drawing.Point(262, 187);
+            this.lblWin2.Name = "lblWin2";
+            this.lblWin2.Size = new System.Drawing.Size(0, 13);
+            this.lblWin2.TabIndex = 15;
+            // 
+            // lblWin3
+            // 
+            this.lblWin3.AutoSize = true;
+            this.lblWin3.Location = new System.Drawing.Point(262, 230);
+            this.lblWin3.Name = "lblWin3";
+            this.lblWin3.Size = new System.Drawing.Size(0, 13);
+            this.lblWin3.TabIndex = 16;
+            // 
+            // lblWin4
+            // 
+            this.lblWin4.AutoSize = true;
+            this.lblWin4.Location = new System.Drawing.Point(262, 285);
+            this.lblWin4.Name = "lblWin4";
+            this.lblWin4.Size = new System.Drawing.Size(0, 13);
+            this.lblWin4.TabIndex = 17;
+            // 
+            // lblWin5
+            // 
+            this.lblWin5.AutoSize = true;
+            this.lblWin5.Location = new System.Drawing.Point(262, 333);
+            this.lblWin5.Name = "lblWin5";
+            this.lblWin5.Size = new System.Drawing.Size(0, 13);
+            this.lblWin5.TabIndex = 18;
             // 
             // topTen
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(674, 442);
+            this.Controls.Add(this.lblWin5);
+            this.Controls.Add(this.lblWin4);
+            this.Controls.Add(this.lblWin3);
+            this.Controls.Add(this.lblWin2);
+            this.Controls.Add(this.lblWin1);
+            this.Controls.Add(this.label9);
+            this.Controls.Add(this.label8);
+            this.Controls.Add(this.label7);
             this.Controls.Add(this.lbNom5);
             this.Controls.Add(this.lbNom4);
             this.Controls.Add(this.lbNom3);
@@ -183,6 +261,14 @@
         private System.Windows.Forms.Label lbNom3;
         private System.Windows.Forms.Label lbNom4;
         private System.Windows.Forms.Label lbNom5;
+        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.Label lblWin1;
+        private System.Windows.Forms.Label lblWin2;
+        private System.Windows.Forms.Label lblWin3;
+        private System.Windows.Forms.Label lblWin4;
+        private System.Windows.Forms.Label lblWin5;
 
     }
 }

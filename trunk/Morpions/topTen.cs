@@ -27,19 +27,40 @@ namespace Morpions
             // Ouverture
             connection.Open();
             // Objet Command
-            SqlCommand command = new SqlCommand("SELECT [USER].USER_ID,[USER].USER_NAME,[SCORE_HISTORIQUE].HISTO_WIN_PLAYER FROM [USER],[SCORE_HISTORIQUE] WHERE [SCORE_HISTORIQUE].USER_ID= [USER].USER_ID ", connection);
+            SqlCommand command = new SqlCommand("SELECT [USER].USER_ID,[USER].USER_NAME,[SCORE_HISTORIQUE].HISTO_WIN_PLAYER FROM [USER],[SCORE_HISTORIQUE] WHERE [SCORE_HISTORIQUE].USER_ID= [USER].USER_ID ORDER BY [SCORE_HISTORIQUE].HISTO_WIN_PLAYER DESC,[SCORE_HISTORIQUE].HISTO_LOSE_PLAYER", connection);
             // Objet DataReader
             SqlDataReader reader = command.ExecuteReader();
             Object[] row = null;
             int i = 1;
-            lbNom1.Text = "";
             while (reader.Read())
             {
                 row = new Object[reader.FieldCount];
                 reader.GetValues(row);
-                
-               //  Label label = "lblNom" + i.ToString();
-               // label.Text= row.GetValue(2).ToString();
+
+                switch (i)
+                {
+                    case 1:
+                        lbNom1.Text = row.GetValue(1).ToString();
+                        lblWin1.Text = row.GetValue(2).ToString();
+                     break;
+                    case 2:
+                     lbNom2.Text = row.GetValue(1).ToString();
+                     lblWin2.Text = row.GetValue(2).ToString();
+                     break;
+                    case 3:
+                     lbNom3.Text = row.GetValue(1).ToString();
+                     lblWin3.Text = row.GetValue(2).ToString();
+                     break;
+                    case 4:
+                     lbNom4.Text = row.GetValue(1).ToString();
+                     lblWin4.Text = row.GetValue(2).ToString();
+                     break;
+                    case 5:
+                     lbNom5.Text = row.GetValue(1).ToString();
+                     lblWin5.Text = row.GetValue(2).ToString();
+                     break;
+                }
+
                 i++;
                
 
