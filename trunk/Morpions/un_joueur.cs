@@ -556,8 +556,29 @@ namespace Morpions
 
                     // Tactiques
 
-                    // si coup 1 milieu mettre dans un extrimite
                     // Si coup 1 milieu sachant aleatoire coup 2 extremite  coup ia extremite
+
+                    if (tab[1, 1] == 1 && tab[0, 0] == 2 && ((tab[2, 2] == 1 && tab[2, 0] == 0 && tab[0, 2] == 0) || (tab[2, 2] == 0 && tab[2, 0] == 1 && tab[0, 2] == 0) || (tab[2, 2] == 0 && tab[2, 0] == 0 && tab[0, 2] == 1)) && joue == false)
+                    {
+                        if (tab[2, 2] == 1 && joue == false ) {
+                            tab[2, 0] = 2;
+                            joue = true;
+                        }
+
+                        if (tab[0, 2] == 1 && joue == false)
+                        {
+                            tab[2, 0] = 2;
+                            joue = true;
+                        }
+
+                        if (tab[2, 0] == 1 && joue == false)
+                        {
+                            tab[2, 2] = 2;
+                            joue = true;
+                        }
+                        Console.WriteLine("toto");
+                    }
+
 
                     if (tab[1, 0] == tab[0, 1] && tab[1, 0] == 1 && tab[0, 0] == 0 && joue == false) {
                         tab[0, 0] = 2;
@@ -641,6 +662,10 @@ namespace Morpions
                         joue = true;
                     }
 
+                    if (tab[1, 1] == 1 && joue == false) {
+                        tab[0, 0] = 2;
+                        joue = true;
+                    } 
 
 
                     
