@@ -150,8 +150,7 @@
     <None Include="BDD_Morpions.xsd">
       <Generator>MSDataSetGenerator</Generator>
       <LastGenOutput>BDD_Morpions.Designer.cs</LastGenOutput>
-      <SubType>
-      </SubType>
+      <SubType>Designer</SubType>
     </None>
     <None Include="BDD_Morpions.xss">
       <DependentUpon>BDD_Morpions.xsd</DependentUpon>
