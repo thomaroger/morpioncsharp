@@ -743,6 +743,8 @@ namespace Morpions
         private void bt_close_Click(object sender, EventArgs e)
         {
             un_joueur.ActiveForm.Close();
+            un_joueur_menu op = new un_joueur_menu();
+            op.Show();
         }
 
         private void morpion_1_1_Click(object sender, EventArgs e)
