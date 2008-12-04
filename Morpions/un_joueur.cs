@@ -17,88 +17,260 @@ namespace Morpions
         int joueur2 = 1;
 
         public void ia(int[,] tab, int lvl) {
-            bool tmp;
-            if (lvl == 1) {
-                // Niveau Noobs
-                bool ok = false;
-                while (!ok) {
-                    Random rndNumbers_x = new Random();
-                    int rndNumber_x = 0;
-                    rndNumber_x = rndNumbers_x.Next(3);
-                   
-
-                    Random rndNumbers_y = new Random();
-                    int rndNumber_y = 0;
-                    rndNumber_y = rndNumbers_y.Next(3);
-                    
-
-                    if (tab[rndNumber_x, rndNumber_y] == 0) {
-                        tab[rndNumber_x, rndNumber_y] = 2;
-                        ok = true;
-                    }
+            bool tmp,faire=false;
+            for (int i = 0; i < 3; i++)
+            {
+                for (int j = 0; j < 3; j++)
+                {
+                    if (tab[j, i] == 0)
+                        faire = true;
                 }
             }
-            else if (lvl == 2)
+            if (faire)
             {
-                // Niveau RoXor
-                bool joue = false;
-                if (tab[0, 0] == 1 || tab[2, 2] == 1 || tab[0, 2] == 1 || tab[2, 0] == 1) {
-                    tab[1, 1] = 2;
+                if (lvl == 1)
+                {
+                    // Niveau Noobs
+                    bool ok = false;
+                    while (!ok)
+                    {
+                        Random rndNumbers_x = new Random();
+                        int rndNumber_x = 0;
+                        rndNumber_x = rndNumbers_x.Next(3);
+
+
+                        Random rndNumbers_y = new Random();
+                        int rndNumber_y = 0;
+                        rndNumber_y = rndNumbers_y.Next(3);
+
+
+                        if (tab[rndNumber_x, rndNumber_y] == 0)
+                        {
+                            tab[rndNumber_x, rndNumber_y] = 2;
+                            ok = true;
+                        }
+                    }
+                }
+                else if (lvl == 2)
+                {
+                    // Niveau RoXor
+                    Boolean joue = false;
+                    if (tab[0, 0] == tab[0, 1] && tab[0, 0] == 1 && tab[0, 2] == 0 && joue == false)
+                    {
+                        tab[0, 2] = 2;
+                        joue = true;
+                    }
+
+                    if (tab[0, 0] == tab[0, 2] && tab[0, 0] == 1 && tab[0, 1] == 0 && joue == false)
+                    {
+                        tab[0, 1] = 2;
+                        joue = true;
+                    }
+
+                    if (tab[0, 2] == tab[0, 1] && tab[0, 2] == 1 && tab[0, 0] == 0 && joue == false)
+                    {
+                        tab[0, 0] = 2;
+                        joue = true;
+                    }
+
+
+                    if (tab[1, 1] == tab[1, 1] && tab[1, 0] == 1 && tab[1, 2] == 0 && joue == false)
+                    {
+                        tab[1, 2] = 2;
+                        joue = true;
+                    }
+
+                    if (tab[1, 0] == tab[1, 2] && tab[1, 0] == 1 && tab[1, 1] == 0 && joue == false)
+                    {
+                        tab[1, 1] = 2;
+                        joue = true;
+                    }
+
+                    if (tab[1, 2] == tab[1, 1] && tab[1, 2] == 1 && tab[1, 0] == 0 && joue == false)
+                    {
+                        tab[1, 0] = 2;
+                        joue = true;
+                    }
+
+
+                    if (tab[2, 0] == tab[2, 1] && tab[2, 0] == 1 && tab[2, 2] == 0 && joue == false)
+                    {
+                        tab[2, 2] = 2;
+                        joue = true;
+                    }
+
+                    if (tab[2, 0] == tab[2, 2] && tab[2, 0] == 1 && tab[2, 1] == 0 && joue == false)
+                    {
+                        tab[2, 1] = 2;
+                        joue = true;
+                    }
+
+                    if (tab[2, 2] == tab[2, 1] && tab[2, 2] == 1 && tab[2, 0] == 0 && joue == false)
+                    {
+                        tab[2, 0] = 2;
+                        joue = true;
+                    }
+
+
+                    if (tab[0, 0] == tab[1, 0] && tab[0, 0] == 1 && tab[2, 0] == 0 && joue == false)
+                    {
+                        tab[2, 0] = 2;
+                        joue = true;
+                    }
+
+                    if (tab[0, 0] == tab[2, 0] && tab[0, 0] == 1 && tab[1, 0] == 0 && joue == false)
+                    {
+                        tab[1, 0] = 2;
+                        joue = true;
+                    }
+
+                    if (tab[2, 0] == tab[1, 0] && tab[2, 0] == 1 && tab[0, 0] == 0 && joue == false)
+                    {
+                        tab[0, 0] = 2;
+                        joue = true;
+                    }
+
+
+                    if (tab[0, 1] == tab[1, 1] && tab[0, 1] == 1 && tab[2, 1] == 0 && joue == false)
+                    {
+                        tab[2, 1] = 2;
+                        joue = true;
+                    }
+
+                    if (tab[0, 1] == tab[2, 1] && tab[0, 1] == 1 && tab[1, 1] == 0 && joue == false)
+                    {
+                        tab[1, 1] = 2;
+                        joue = true;
+                    }
+
+                    if (tab[2, 1] == tab[1, 1] && tab[2, 1] == 1 && tab[0, 1] == 0 && joue == false)
+                    {
+                        tab[0, 1] = 2;
+                        joue = true;
+                    }
+
+                    if (tab[0, 2] == tab[1, 2] && tab[0, 2] == 1 && tab[2, 2] == 0 && joue == false)
+                    {
+                        tab[2, 2] = 2;
+                        joue = true;
+                    }
+
+                    if (tab[0, 2] == tab[2, 2] && tab[0, 2] == 1 && tab[1, 2] == 0 && joue == false)
+                    {
+                        tab[1, 2] = 2;
+                        joue = true;
+                    }
+
+                    if (tab[2, 2] == tab[1, 2] && tab[2, 2] == 1 && tab[0, 2] == 0 && joue == false)
+                    {
+                        tab[0, 2] = 2;
+                        joue = true;
+                    }
+
+                    
+                    if (tab[0, 0] == tab[1, 1] && tab[1, 1] == 1 && tab[2, 2] == 0 && joue == false) {
+                        tab[2, 2] = 2;
+                        joue = true;
+                    }
+
+                    if (tab[0, 0] == tab[2, 2] && tab[2, 2] == 1 && tab[1, 1] == 0 && joue == false)
+                    {
+                        tab[1, 1] = 2;
+                        joue = true;
+                    }
+
+                    if (tab[1, 1] == tab[2, 2] && tab[2, 2] == 1 && tab[0, 0] == 0 && joue == false)
+                    {
+                        tab[0, 0] = 2;
+                        joue = true;
+                    }
+
+
+                    /*if (tab[0, 0] == 1 || tab[2, 2] == 1 || tab[0, 2] == 1 || tab[2, 0] == 1 && tab[1, 1] == 0 && joue == false)
+                    {
+                        tab[1, 1] = 2;
+                        joue = true;
+                    }*/
+
+                    Console.WriteLine(joue);
+                    if (!joue)
+                    {
+                        bool ok = false;
+                        while (!ok)
+                        {
+                            Console.WriteLine("Aleatoire");
+                            Random rndNumbers_x = new Random();
+                            int rndNumber_x = 0;
+                            rndNumber_x = rndNumbers_x.Next(3);
+
+
+                            Random rndNumbers_y = new Random();
+                            int rndNumber_y = 0;
+                            rndNumber_y = rndNumbers_y.Next(3);
+
+
+                            if (tab[rndNumber_x, rndNumber_y] == 0)
+                            {
+                                tab[rndNumber_x, rndNumber_y] = 2;
+                                ok = true;
+                            }
+                        }
+                    }
+                }
+                else
+                {
+
+                }
+                if (tab[0, 0] == 2)
+                {
+                    morpion_1_1.Text = "O";
+                    morpion_1_1.Update();
+                }
+                if (tab[0, 1] == 2)
+                {
+                    morpion_1_2.Text = "O";
+                    morpion_1_2.Update();
+                }
+                if (tab[0, 2] == 2)
+                {
+                    morpion_1_3.Text = "O";
+                    morpion_1_3.Update();
+                }
+                if (tab[1, 0] == 2)
+                {
+                    morpion_2_1.Text = "O";
+                    morpion_2_1.Update();
+                }
+                if (tab[1, 1] == 2)
+                {
                     morpion_2_2.Text = "O";
                     morpion_2_2.Update();
-                } 
-
-
+                }
+                if (tab[1, 2] == 2)
+                {
+                    morpion_2_3.Text = "O";
+                    morpion_2_3.Update();
+                }
+                if (tab[2, 0] == 2)
+                {
+                    morpion_3_1.Text = "O";
+                    morpion_3_1.Update();
+                }
+                if (tab[2, 1] == 2)
+                {
+                    morpion_3_2.Text = "O";
+                    morpion_3_2.Update();
+                }
+                if (tab[2, 2] == 2)
+                {
+                    morpion_3_3.Text = "O";
+                    morpion_3_3.Update();
+                }
+                tmp = routine_victoire(tab);
             }
-            else { 
-            
+            else {
+                label_morpions.Text = "Match Nul";
             }
-            if (tab[0, 0] == 2)
-            {
-                morpion_1_1.Text = "O";
-                morpion_1_1.Update();
-            }
-            if (tab[0, 1] == 2)
-            {
-                morpion_1_2.Text = "O";
-                morpion_1_2.Update();
-            }
-            if (tab[0, 2] == 2)
-            {
-                morpion_1_3.Text = "O";
-                morpion_1_3.Update();
-            }
-            if (tab[1, 0] == 2)
-            {
-                morpion_2_1.Text = "O";
-                morpion_2_1.Update();
-            }
-            if (tab[1, 1] == 2)
-            {
-                morpion_2_2.Text = "O";
-                morpion_2_2.Update();
-            }
-            if (tab[1, 2] == 2)
-            {
-                morpion_2_3.Text = "O";
-                morpion_2_3.Update();
-            }
-            if (tab[2, 0] == 2)
-            {
-                morpion_3_1.Text = "O";
-                morpion_3_1.Update();
-            }
-            if (tab[2, 1] == 2)
-            {
-                morpion_3_2.Text = "O";
-                morpion_3_2.Update();
-            }
-            if (tab[2, 2] == 2)
-            {
-                morpion_3_3.Text = "O";
-                morpion_3_3.Update();
-            }
-            tmp = routine_victoire(tab);
         } 
 
         public bool routine_victoire(int[,] tab) {
