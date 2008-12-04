@@ -27,16 +27,20 @@ namespace Morpions
             // Ouverture
             connection.Open();
             // Objet Command
-            SqlCommand command = new SqlCommand("SELECT [USER].USER_ID,[USER].USER_NAME,MAX([SCORE_HISTORIQUE].HISTO_WIN_PLAYER) FROM [USER],[SCORE_HISTORIQUE] WHERE [SCORE_HISTORIQUE].USER_ID= [USER].USER_ID ", connection);
+            SqlCommand command = new SqlCommand("SELECT [USER].USER_ID,[USER].USER_NAME,[SCORE_HISTORIQUE].HISTO_WIN_PLAYER FROM [USER],[SCORE_HISTORIQUE] WHERE [SCORE_HISTORIQUE].USER_ID= [USER].USER_ID ", connection);
             // Objet DataReader
             SqlDataReader reader = command.ExecuteReader();
             Object[] row = null;
-
+            int i = 1;
+            lbNom1.Text = "";
             while (reader.Read())
             {
                 row = new Object[reader.FieldCount];
                 reader.GetValues(row);
-                textBox1.Text = row.GetValue(2).ToString(); 
+                
+                 Label label = "lblNom" + i.ToString();
+                label.Text= row.GetValue(2).ToString();
+                i++;
                
 
 
