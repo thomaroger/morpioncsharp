@@ -403,7 +403,39 @@ namespace Morpions
                         joue = true;
                     }
 
+
+
                     // Defense
+
+                    if( tab[0,0] == tab[2, 1] && tab[0, 0] == 1 && tab[2, 0] == 0 && joue == false){
+                        Console.WriteLine("toto");
+                        tab[2, 0] = 2;
+                        joue = true;
+                    }
+
+                    if (tab[2, 0] == tab[1, 2] && tab[2, 0] == 1 && tab[2, 2] == 0 && joue == false)
+                    {
+                        Console.WriteLine("toto");
+                        tab[2, 2] = 2;
+                        joue = true;
+                    }
+
+                    if (tab[2, 2] == tab[0, 1] && tab[0, 1] == 1 && tab[0, 2] == 0 && joue == false)
+                    {
+                        Console.WriteLine("toto");
+                        tab[0, 2] = 2;
+                        joue = true;
+                    }
+
+                    if (tab[0, 2] == tab[1, 0] && tab[1, 0] == 1 && tab[0, 0] == 0 && joue == false)
+                    {
+                        Console.WriteLine("toto");
+                        tab[0, 0] = 2;
+                        joue = true;
+                    }
+
+
+
                     if (tab[0, 0] == tab[0, 2] && tab[0, 0] == 1 && tab[0, 1] == 0 && joue == false)
                     {
                         tab[0, 1] = 2;
