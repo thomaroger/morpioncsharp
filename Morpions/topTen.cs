@@ -38,8 +38,8 @@ namespace Morpions
                 row = new Object[reader.FieldCount];
                 reader.GetValues(row);
                 
-                 Label label = "lblNom" + i.ToString();
-                label.Text= row.GetValue(2).ToString();
+               //  Label label = "lblNom" + i.ToString();
+               // label.Text= row.GetValue(2).ToString();
                 i++;
                
 
