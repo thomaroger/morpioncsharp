@@ -246,7 +246,9 @@ namespace Morpions
                         joue = true;
                     }
 
-                    if(tab[0,0] == tab[2,2])
+                    if (tab[0, 0] == tab[2, 2] && tab[0, 0] == 1 && tab[1, 1] == 1) { 
+                    
+                    }
 
                     //Attaque
                     if (tab[0, 0] == tab[0, 2] && tab[0, 0] == 2 && tab[0, 1] == 0 && joue == false)
