@@ -47,6 +47,11 @@
             this.lblWin3 = new System.Windows.Forms.Label();
             this.lblWin4 = new System.Windows.Forms.Label();
             this.lblWin5 = new System.Windows.Forms.Label();
+            this.lblLose5 = new System.Windows.Forms.Label();
+            this.lblLose4 = new System.Windows.Forms.Label();
+            this.lblLose3 = new System.Windows.Forms.Label();
+            this.lblLose2 = new System.Windows.Forms.Label();
+            this.lblLose1 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // label1
@@ -112,7 +117,7 @@
             // lbNom1
             // 
             this.lbNom1.AutoSize = true;
-            this.lbNom1.Location = new System.Drawing.Point(144, 150);
+            this.lbNom1.Location = new System.Drawing.Point(144, 142);
             this.lbNom1.Name = "lbNom1";
             this.lbNom1.Size = new System.Drawing.Size(0, 13);
             this.lbNom1.TabIndex = 6;
@@ -120,7 +125,7 @@
             // lbNom2
             // 
             this.lbNom2.AutoSize = true;
-            this.lbNom2.Location = new System.Drawing.Point(144, 195);
+            this.lbNom2.Location = new System.Drawing.Point(144, 187);
             this.lbNom2.Name = "lbNom2";
             this.lbNom2.Size = new System.Drawing.Size(0, 13);
             this.lbNom2.TabIndex = 7;
@@ -128,7 +133,7 @@
             // lbNom3
             // 
             this.lbNom3.AutoSize = true;
-            this.lbNom3.Location = new System.Drawing.Point(144, 238);
+            this.lbNom3.Location = new System.Drawing.Point(144, 230);
             this.lbNom3.Name = "lbNom3";
             this.lbNom3.Size = new System.Drawing.Size(0, 13);
             this.lbNom3.TabIndex = 8;
@@ -136,7 +141,7 @@
             // lbNom4
             // 
             this.lbNom4.AutoSize = true;
-            this.lbNom4.Location = new System.Drawing.Point(144, 285);
+            this.lbNom4.Location = new System.Drawing.Point(144, 277);
             this.lbNom4.Name = "lbNom4";
             this.lbNom4.Size = new System.Drawing.Size(0, 13);
             this.lbNom4.TabIndex = 9;
@@ -144,7 +149,7 @@
             // lbNom5
             // 
             this.lbNom5.AutoSize = true;
-            this.lbNom5.Location = new System.Drawing.Point(144, 333);
+            this.lbNom5.Location = new System.Drawing.Point(144, 325);
             this.lbNom5.Name = "lbNom5";
             this.lbNom5.Size = new System.Drawing.Size(0, 13);
             this.lbNom5.TabIndex = 10;
@@ -179,7 +184,7 @@
             // lblWin1
             // 
             this.lblWin1.AutoSize = true;
-            this.lblWin1.Location = new System.Drawing.Point(262, 142);
+            this.lblWin1.Location = new System.Drawing.Point(307, 142);
             this.lblWin1.Name = "lblWin1";
             this.lblWin1.Size = new System.Drawing.Size(0, 13);
             this.lblWin1.TabIndex = 14;
@@ -187,7 +192,7 @@
             // lblWin2
             // 
             this.lblWin2.AutoSize = true;
-            this.lblWin2.Location = new System.Drawing.Point(262, 187);
+            this.lblWin2.Location = new System.Drawing.Point(307, 187);
             this.lblWin2.Name = "lblWin2";
             this.lblWin2.Size = new System.Drawing.Size(0, 13);
             this.lblWin2.TabIndex = 15;
@@ -195,7 +200,7 @@
             // lblWin3
             // 
             this.lblWin3.AutoSize = true;
-            this.lblWin3.Location = new System.Drawing.Point(262, 230);
+            this.lblWin3.Location = new System.Drawing.Point(307, 230);
             this.lblWin3.Name = "lblWin3";
             this.lblWin3.Size = new System.Drawing.Size(0, 13);
             this.lblWin3.TabIndex = 16;
@@ -203,7 +208,7 @@
             // lblWin4
             // 
             this.lblWin4.AutoSize = true;
-            this.lblWin4.Location = new System.Drawing.Point(262, 285);
+            this.lblWin4.Location = new System.Drawing.Point(307, 285);
             this.lblWin4.Name = "lblWin4";
             this.lblWin4.Size = new System.Drawing.Size(0, 13);
             this.lblWin4.TabIndex = 17;
@@ -211,16 +216,61 @@
             // lblWin5
             // 
             this.lblWin5.AutoSize = true;
-            this.lblWin5.Location = new System.Drawing.Point(262, 333);
+            this.lblWin5.Location = new System.Drawing.Point(307, 333);
             this.lblWin5.Name = "lblWin5";
             this.lblWin5.Size = new System.Drawing.Size(0, 13);
             this.lblWin5.TabIndex = 18;
+            // 
+            // lblLose5
+            // 
+            this.lblLose5.AutoSize = true;
+            this.lblLose5.Location = new System.Drawing.Point(447, 333);
+            this.lblLose5.Name = "lblLose5";
+            this.lblLose5.Size = new System.Drawing.Size(0, 13);
+            this.lblLose5.TabIndex = 23;
+            // 
+            // lblLose4
+            // 
+            this.lblLose4.AutoSize = true;
+            this.lblLose4.Location = new System.Drawing.Point(447, 285);
+            this.lblLose4.Name = "lblLose4";
+            this.lblLose4.Size = new System.Drawing.Size(0, 13);
+            this.lblLose4.TabIndex = 22;
+            // 
+            // lblLose3
+            // 
+            this.lblLose3.AutoSize = true;
+            this.lblLose3.Location = new System.Drawing.Point(447, 230);
+            this.lblLose3.Name = "lblLose3";
+            this.lblLose3.Size = new System.Drawing.Size(0, 13);
+            this.lblLose3.TabIndex = 21;
+            // 
+            // lblLose2
+            // 
+            this.lblLose2.AutoSize = true;
+            this.lblLose2.Location = new System.Drawing.Point(447, 187);
+            this.lblLose2.Name = "lblLose2";
+            this.lblLose2.Size = new System.Drawing.Size(0, 13);
+            this.lblLose2.TabIndex = 20;
+            // 
+            // lblLose1
+            // 
+            this.lblLose1.AutoSize = true;
+            this.lblLose1.Location = new System.Drawing.Point(447, 142);
+            this.lblLose1.Name = "lblLose1";
+            this.lblLose1.Size = new System.Drawing.Size(0, 13);
+            this.lblLose1.TabIndex = 19;
             // 
             // topTen
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(674, 442);
+            this.Controls.Add(this.lblLose5);
+            this.Controls.Add(this.lblLose4);
+            this.Controls.Add(this.lblLose3);
+            this.Controls.Add(this.lblLose2);
+            this.Controls.Add(this.lblLose1);
             this.Controls.Add(this.lblWin5);
             this.Controls.Add(this.lblWin4);
             this.Controls.Add(this.lblWin3);
@@ -269,6 +319,11 @@
         private System.Windows.Forms.Label lblWin3;
         private System.Windows.Forms.Label lblWin4;
         private System.Windows.Forms.Label lblWin5;
+        private System.Windows.Forms.Label lblLose5;
+        private System.Windows.Forms.Label lblLose4;
+        private System.Windows.Forms.Label lblLose3;
+        private System.Windows.Forms.Label lblLose2;
+        private System.Windows.Forms.Label lblLose1;
 
     }
 }
