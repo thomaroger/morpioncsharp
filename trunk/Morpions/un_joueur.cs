@@ -217,7 +217,6 @@ namespace Morpions
                         bool ok = false;
                         while (!ok)
                         {
-                            Console.WriteLine("Aleatoire");
                             Random rndNumbers_x = new Random();
                             int rndNumber_x = 0;
                             rndNumber_x = rndNumbers_x.Next(3);
@@ -408,28 +407,24 @@ namespace Morpions
                     // Defense
 
                     if( tab[0,0] == tab[2, 1] && tab[0, 0] == 1 && tab[2, 0] == 0 && joue == false){
-                        Console.WriteLine("toto");
                         tab[2, 0] = 2;
                         joue = true;
                     }
 
                     if (tab[2, 0] == tab[1, 2] && tab[2, 0] == 1 && tab[2, 2] == 0 && joue == false)
                     {
-                        Console.WriteLine("toto");
                         tab[2, 2] = 2;
                         joue = true;
                     }
 
                     if (tab[2, 2] == tab[0, 1] && tab[0, 1] == 1 && tab[0, 2] == 0 && joue == false)
                     {
-                        Console.WriteLine("toto");
                         tab[0, 2] = 2;
                         joue = true;
                     }
 
                     if (tab[0, 2] == tab[1, 0] && tab[1, 0] == 1 && tab[0, 0] == 0 && joue == false)
                     {
-                        Console.WriteLine("toto");
                         tab[0, 0] = 2;
                         joue = true;
                     }
@@ -587,7 +582,7 @@ namespace Morpions
                         joue = true;
                     }
 
-                    Console.WriteLine(joue);
+                    
                     if (!joue)
                     {
                         bool ok = false;
@@ -663,21 +658,22 @@ namespace Morpions
             }
             else {
                 label_morpions.Text = "Match Nul";
+                morpion_1_1.Enabled = false;
+                morpion_1_2.Enabled = false;
+                morpion_1_3.Enabled = false;
+                morpion_2_1.Enabled = false;
+                morpion_2_2.Enabled = false;
+                morpion_2_3.Enabled = false;
+                morpion_3_1.Enabled = false;
+                morpion_3_2.Enabled = false;
+                morpion_3_3.Enabled = false;
             }
         } 
 
         public bool routine_victoire(int[,] tab) {
             bool victory = false;
             int win = 0;
-            for (int i = 0; i < 3; i++)
-            {
-                for (int j = 0; j < 3; j++)
-                {
-                    Console.Write(tab[i, j]);
-                    Console.Write(" ");
-                }
-                Console.WriteLine();
-            }
+            
             for (int i = 0; i < 3; i++)
             {
                 if (tab[i, 0] == tab[i, 1] && tab[i, 0] == tab[i, 2] && tab[i, 0]!=0)
@@ -719,11 +715,11 @@ namespace Morpions
 
                 if (win == 1)
                 {
-                    label_morpions.Text = "Victory";
+                    label_morpions.Text = "Victoire";
                     return true;
                 }
                 else {
-                    label_morpions.Text = "Lost";
+                    label_morpions.Text = "Perdu";
                     return true;
                 }
                
