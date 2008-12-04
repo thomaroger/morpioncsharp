@@ -239,21 +239,17 @@ namespace Morpions
                 {
                     Boolean joue = false;
                     
-                    if (tab[0, 0] == tab[0, 1] && tab[0, 0] == 1 && tab[0, 2] == 0 && joue == false)
+                    
+
+                    if (tab[0, 0] == tab[2, 2] && tab[0, 0] == 1 && tab[1, 1] == 2 && tab[0, 1]==0 && joue == false)
                     {
-                        tab[0, 2] = 2;
+                        tab[0, 1] = 2;
                         joue = true;
                     }
 
-                    if (tab[0, 0] == tab[2, 2] && tab[0, 0] == 1 && tab[1, 1] == 2 && tab[0, 2]==0 && joue == false)
+                    if (tab[2, 0] == tab[0, 2] && tab[2, 0] == 1 && tab[1, 1] == 2 && tab[0, 1] == 0 && joue == false)
                     {
-                        tab[0, 2] = 2;
-                        joue = true;
-                    }
-
-                    if (tab[2, 0] == tab[0, 2] && tab[2, 0] == 1 && tab[1, 1] == 2 && tab[0, 0] == 0 && joue == false)
-                    {
-                        tab[0, 0] = 2;
+                        tab[0, 1] = 2;
                         joue = true;
                     }
 
@@ -406,30 +402,11 @@ namespace Morpions
 
                     // Defense
 
-                    if( tab[0,0] == tab[2, 1] && tab[0, 0] == 1 && tab[2, 0] == 0 && joue == false){
-                        tab[2, 0] = 2;
-                        joue = true;
-                    }
-
-                    if (tab[2, 0] == tab[1, 2] && tab[2, 0] == 1 && tab[2, 2] == 0 && joue == false)
-                    {
-                        tab[2, 2] = 2;
-                        joue = true;
-                    }
-
-                    if (tab[2, 2] == tab[0, 1] && tab[0, 1] == 1 && tab[0, 2] == 0 && joue == false)
+                    if (tab[0, 0] == tab[0, 1] && tab[0, 0] == 1 && tab[0, 2] == 0 && joue == false)
                     {
                         tab[0, 2] = 2;
                         joue = true;
                     }
-
-                    if (tab[0, 2] == tab[1, 0] && tab[1, 0] == 1 && tab[0, 0] == 0 && joue == false)
-                    {
-                        tab[0, 0] = 2;
-                        joue = true;
-                    }
-
-
 
                     if (tab[0, 0] == tab[0, 2] && tab[0, 0] == 1 && tab[0, 1] == 0 && joue == false)
                     {
@@ -444,7 +421,7 @@ namespace Morpions
                     }
 
 
-                    if (tab[1, 1] == tab[1, 1] && tab[1, 0] == 1 && tab[1, 2] == 0 && joue == false)
+                    if (tab[1, 0] == tab[1, 1] && tab[1, 0] == 1 && tab[1, 2] == 0 && joue == false)
                     {
                         tab[1, 2] = 2;
                         joue = true;
@@ -576,11 +553,68 @@ namespace Morpions
                     }
 
 
+
+                    // Tactiques
+                    if( tab[0,0] == tab[2, 1] && tab[0, 0] == 1 && tab[2, 0] == 0 && joue == false){
+                        tab[2, 0] = 2;
+                        joue = true;
+                    }
+
+                    if (tab[2, 0] == tab[1, 2] && tab[2, 0] == 1 && tab[2, 2] == 0 && joue == false)
+                    {
+                        tab[2, 2] = 2;
+                        joue = true;
+                    }
+
+                    if (tab[2, 2] == tab[0, 1] && tab[0, 1] == 1 && tab[0, 2] == 0 && joue == false)
+                    {
+                        tab[0, 2] = 2;
+                        joue = true;
+                    }
+
+                    if (tab[0, 2] == tab[1, 0] && tab[1, 0] == 1 && tab[0, 0] == 0 && joue == false)
+                    {
+                        tab[0, 0] = 2;
+                        joue = true;
+                    }
+
+                    if (tab[2, 2] == tab[1, 0] && tab[2, 2] == 1 && tab[2, 0] == 0 && joue == false)
+                    {
+                        tab[2, 0] = 2;
+                        joue = true;
+                    }
+
+                    if (tab[0, 2] == tab[2, 1] && tab[2, 1] == 1 && tab[2, 2] == 0 && joue == false)
+                    {
+                        tab[2, 2] = 2;
+                        joue = true;
+                    }
+
+                    if (tab[0, 0] == tab[1, 2] && tab[0, 0] == 1 && tab[0, 2] == 0 && joue == false)
+                    {
+                        tab[0, 2] = 2;
+                        joue = true;
+                    }
+
+                    if (tab[2, 0] == tab[0, 1] && tab[2, 0] == 1 && tab[0, 0] == 0 && joue == false)
+                    {
+                        tab[0, 0] = 2;
+                        joue = true;
+                    }
+
                     if ((tab[0, 0] == 1 || tab[2, 2] == 1 || tab[0, 2] == 1 || tab[2, 0] == 1) && tab[1, 1] == 0 && joue == false)
                     {
                         tab[1, 1] = 2;
                         joue = true;
                     }
+
+                    if ((tab[0, 1] == 1 || tab[1, 0] == 1 || tab[2, 1] == 1 || tab[1, 2] == 1) && tab[1, 1] == 0 && joue == false)
+                    {
+                        tab[1, 1] = 2;
+                        joue = true;
+                    }
+
+
 
                     
                     if (!joue)
