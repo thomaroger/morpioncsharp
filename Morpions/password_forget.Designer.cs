@@ -44,7 +44,7 @@
             this.bt_close.BackColor = System.Drawing.Color.SkyBlue;
             this.bt_close.Font = new System.Drawing.Font("Georgia", 12F);
             this.bt_close.ForeColor = System.Drawing.Color.Red;
-            this.bt_close.Location = new System.Drawing.Point(123, 307);
+            this.bt_close.Location = new System.Drawing.Point(122, 306);
             this.bt_close.Name = "bt_close";
             this.bt_close.Size = new System.Drawing.Size(174, 40);
             this.bt_close.TabIndex = 15;
@@ -57,7 +57,7 @@
             this.tb_name.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.tb_name.BackColor = System.Drawing.Color.LightGray;
             this.tb_name.Font = new System.Drawing.Font("Georgia", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tb_name.Location = new System.Drawing.Point(150, 89);
+            this.tb_name.Location = new System.Drawing.Point(149, 88);
             this.tb_name.Name = "tb_name";
             this.tb_name.Size = new System.Drawing.Size(119, 21);
             this.tb_name.TabIndex = 14;
@@ -67,7 +67,7 @@
             this.tb_login.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.tb_login.BackColor = System.Drawing.Color.LightGray;
             this.tb_login.Font = new System.Drawing.Font("Georgia", 9F);
-            this.tb_login.Location = new System.Drawing.Point(150, 33);
+            this.tb_login.Location = new System.Drawing.Point(149, 32);
             this.tb_login.Name = "tb_login";
             this.tb_login.Size = new System.Drawing.Size(119, 21);
             this.tb_login.TabIndex = 13;
@@ -77,7 +77,7 @@
             this.lb_name.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.lb_name.AutoSize = true;
             this.lb_name.Font = new System.Drawing.Font("Georgia", 9F);
-            this.lb_name.Location = new System.Drawing.Point(182, 71);
+            this.lb_name.Location = new System.Drawing.Point(181, 70);
             this.lb_name.Name = "lb_name";
             this.lb_name.Size = new System.Drawing.Size(62, 15);
             this.lb_name.TabIndex = 10;
@@ -88,7 +88,7 @@
             this.lb_login.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.lb_login.AutoSize = true;
             this.lb_login.Font = new System.Drawing.Font("Georgia", 9F);
-            this.lb_login.Location = new System.Drawing.Point(187, 15);
+            this.lb_login.Location = new System.Drawing.Point(186, 14);
             this.lb_login.Name = "lb_login";
             this.lb_login.Size = new System.Drawing.Size(46, 15);
             this.lb_login.TabIndex = 9;
@@ -100,7 +100,7 @@
             this.bt_submit.BackColor = System.Drawing.Color.SkyBlue;
             this.bt_submit.Font = new System.Drawing.Font("Georgia", 12F);
             this.bt_submit.ForeColor = System.Drawing.Color.Red;
-            this.bt_submit.Location = new System.Drawing.Point(123, 219);
+            this.bt_submit.Location = new System.Drawing.Point(122, 218);
             this.bt_submit.Name = "bt_submit";
             this.bt_submit.Size = new System.Drawing.Size(174, 51);
             this.bt_submit.TabIndex = 8;
@@ -130,7 +130,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(421, 363);
+            this.ClientSize = new System.Drawing.Size(419, 361);
             this.Controls.Add(this.tb_email);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.bt_close);

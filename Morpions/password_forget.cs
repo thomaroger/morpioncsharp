@@ -89,6 +89,8 @@ namespace Morpions
                 connection.Close();
 
                 //Corps du mail
+                if(pass != null)
+                {
                 string Body = "Votre mot de passe est :" + pass;
 
                 msg = new MailMessage(from, to, sujet, Body);
@@ -96,13 +98,17 @@ namespace Morpions
                 SmtpClient objSC = new SmtpClient("smtp.gmail.com", 587);
 
                 objSC.Credentials = new NetworkCredential("projet.morpions@gmail.com", "lose007*");
-                //objSC.Send(msg);
-                objSC.SendAsync(msg, "Envoie en cours");
+                objSC.Send(msg);
+                //objSC.SendAsync(msg, "Envoie en cours");
 
                 msgbox = "Génération de votre mot de passe réussie. \n";
                 msgbox += "Un email vous a été envoyé. \n";
                 MessageBox.Show(msgbox, "Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                
+                }
+                else
+                {
+                    MessageBox.Show("Aucun compte trouve", "Erreur", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
                 //fermeture de la forme
                 password_forget.ActiveForm.Close();
             }
