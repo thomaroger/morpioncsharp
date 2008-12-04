@@ -246,8 +246,16 @@ namespace Morpions
                         joue = true;
                     }
 
-                    if (tab[0, 0] == tab[2, 2] && tab[0, 0] == 1 && tab[1, 1] == 1) { 
-                    
+                    if (tab[0, 0] == tab[2, 2] && tab[0, 0] == 1 && tab[1, 1] == 2 && tab[0, 2]==0 && joue == false)
+                    {
+                        tab[0, 2] = 2;
+                        joue = true;
+                    }
+
+                    if (tab[2, 0] == tab[0, 2] && tab[2, 0] == 1 && tab[1, 1] == 2 && tab[0, 0] == 0 && joue == false)
+                    {
+                        tab[0, 0] = 2;
+                        joue = true;
                     }
 
                     //Attaque
@@ -667,6 +675,16 @@ namespace Morpions
 
             if (victory)
             {
+                morpion_1_1.Enabled = false;
+                morpion_1_2.Enabled = false;
+                morpion_1_3.Enabled = false;
+                morpion_2_1.Enabled = false;
+                morpion_2_2.Enabled = false;
+                morpion_2_3.Enabled = false;
+                morpion_3_1.Enabled = false;
+                morpion_3_2.Enabled = false;
+                morpion_3_3.Enabled = false;
+
                 if (win == 1)
                 {
                     label_morpions.Text = "Victory";
@@ -676,6 +694,7 @@ namespace Morpions
                     label_morpions.Text = "Lost";
                     return true;
                 }
+               
             }
             return false;
         }
