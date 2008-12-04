@@ -238,6 +238,7 @@ namespace Morpions
                 }
                 else
                 {
+                    // Mode PGM
 
                 }
                 if (tab[0, 0] == 2)
