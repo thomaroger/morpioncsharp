@@ -71,6 +71,12 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>BDD_Morpions.xsd</DependentUpon>
     </Compile>
+    <Compile Include="deux_joueur.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="deux_joueur.Designer.cs">
+      <DependentUpon>deux_joueur.cs</DependentUpon>
+    </Compile>
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>

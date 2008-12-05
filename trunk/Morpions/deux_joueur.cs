@@ -18,18 +18,19 @@ namespace Morpions
         int nbO = 0;
 
 
-        public bool routine_victoire(int[,] tab) {
+        public bool routine_victoire(int[,] tab)
+        {
             bool victory = false;
             int win = 0;
-            
+
             for (int i = 0; i < 3; i++)
             {
-                if (tab[i, 0] == tab[i, 1] && tab[i, 0] == tab[i, 2] && tab[i, 0]!=0)
+                if (tab[i, 0] == tab[i, 1] && tab[i, 0] == tab[i, 2] && tab[i, 0] != 0)
                 {
                     victory = true;
                     win = tab[i, 0];
                 }
-                if (tab[0, i] == tab[1, i] && tab[0, i] == tab[2, i] && tab[0,i] != 0)
+                if (tab[0, i] == tab[1, i] && tab[0, i] == tab[2, i] && tab[0, i] != 0)
                 {
                     victory = true;
                     win = tab[0, i];
@@ -45,7 +46,7 @@ namespace Morpions
             if (tab[0, 2] == tab[1, 1] && tab[0, 2] == tab[2, 0] && tab[0, 2] != 0)
             {
                 victory = true;
-                win = tab[0, 2]; 
+                win = tab[0, 2];
             }
 
 
@@ -66,17 +67,19 @@ namespace Morpions
                     label_morpions.Text = "Victoire";
                     return true;
                 }
-                else {
+                else
+                {
                     label_morpions.Text = "Perdu";
                     return true;
                 }
-               
+
             }
             return false;
         }
 
 
-        public deux_joueur() {
+        public deux_joueur()
+        {
             InitializeComponent();
         }
 
