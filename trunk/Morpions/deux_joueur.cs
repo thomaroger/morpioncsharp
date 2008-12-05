@@ -92,18 +92,19 @@ namespace Morpions
         {
             if (tab[0, 0] == 0)
             {
-                if ((nbX == 0 && nbO == 0) || nbX < nbO)
+                if (nbX <= nbO)
                 {
                     morpion_1_1.Text = "X";
                     nbX += 1;
+                    tab[0, 0] = 1;
                 }
                 else if (nbX > nbO)
                 {
                     morpion_1_1.Text = "O";
                     nbO += 1;
+                    tab[0, 0] = 0;
                 }
                 morpion_1_1.Update();
-                tab[0, 0] = 1;
                 routine_victoire(tab);
             }
         }
@@ -112,18 +113,20 @@ namespace Morpions
         {
             if (tab[0, 1] == 0)
             {
-                if ((nbX == 0 && nbO == 0) || nbX < nbO)
+                if (nbX <= nbO)
                 {
                     morpion_1_2.Text = "X";
                     nbX += 1;
+                    tab[0, 1] = 1;
                 }
                 else if (nbX > nbO)
                 {
                     morpion_1_2.Text = "O";
                     nbO += 1;
+                    tab[0, 1] = 0;
                 }
                 morpion_1_2.Update();
-                tab[0, 1] = 1;
+                
                 routine_victoire(tab);
             }
         }
@@ -132,18 +135,20 @@ namespace Morpions
         {
             if (tab[0, 2] == 0)
             {
-                if ((nbX == 0 && nbO == 0) || nbX < nbO)
+                if (nbX <= nbO)
                 {
                     morpion_1_3.Text = "X";
                     nbX += 1;
+                    tab[0, 2] = 1;
                 }
                 else if (nbX > nbO)
                 {
                     morpion_1_3.Text = "O";
                     nbO += 1;
+                    tab[0, 2] = 0;
                 }
                 morpion_1_3.Update();
-                tab[0, 2] = 1;
+                
                 routine_victoire(tab);
             }
         }
@@ -152,18 +157,20 @@ namespace Morpions
         {
             if (tab[1, 0] == 0)
             {
-                if ((nbX == 0 && nbO == 0) || nbX < nbO)
+                if (nbX <= nbO)
                 {
                     morpion_2_1.Text = "X";
                     nbX += 1;
+                    tab[1, 0] = 1;
                 }
                 else if (nbX > nbO)
                 {
                     morpion_2_1.Text = "O";
                     nbO += 1;
+                    tab[1, 0] = 0;
                 }
                 morpion_2_1.Update();
-                tab[1, 0] = 1;
+                
                 routine_victoire(tab);
             }
         }
@@ -172,18 +179,20 @@ namespace Morpions
         {
             if (tab[1, 1] == 0)
             {
-                if ((nbX == 0 && nbO == 0) || nbX < nbO)
+                if (nbX <= nbO)
                 {
                     morpion_2_2.Text = "X";
                     nbX += 1;
+                    tab[1, 1] = 1;
                 }
                 else if (nbX > nbO)
                 {
                     morpion_2_2.Text = "O";
                     nbO += 1;
+                    tab[1, 1] = 0;
                 }
                 morpion_2_2.Update();
-                tab[1, 1] = 1;
+                
                 routine_victoire(tab);
             }
         }
@@ -192,18 +201,20 @@ namespace Morpions
         {
             if (tab[1, 2] == 0)
             {
-                if ((nbX == 0 && nbO == 0) || nbX < nbO)
+                if (nbX <= nbO)
                 {
                     morpion_2_3.Text = "X";
                     nbX += 1;
+                    tab[1, 2] = 1;
                 }
                 else if (nbX > nbO)
                 {
                     morpion_2_3.Text = "O";
                     nbO += 1;
+                    tab[1, 2] = 0;
                 }
                 morpion_2_3.Update();
-                tab[1, 2] = 1;
+                
                 routine_victoire(tab);
             }
         }
@@ -212,18 +223,20 @@ namespace Morpions
         {
             if (tab[2, 0] == 0)
             {
-                if ((nbX == 0 && nbO == 0) || nbX < nbO)
+                if (nbX <= nbO)
                 {
                     morpion_3_1.Text = "X";
                     nbX += 1;
+                    tab[2, 0] = 1;
                 }
                 else if (nbX > nbO)
                 {
                     morpion_3_1.Text = "O";
                     nbO += 1;
+                    tab[2, 0] = 0;
                 }
                 morpion_3_1.Update();
-                tab[2, 0] = 1;
+                
                 routine_victoire(tab);
             }
         }
@@ -232,18 +245,20 @@ namespace Morpions
         {
             if (tab[2, 1] == 0)
             {
-                if ((nbX == 0 && nbO == 0) || nbX < nbO)
+                if (nbX <= nbO)
                 {
                     morpion_3_2.Text = "X";
                     nbX += 1;
+                    tab[2, 1] = 1;
                 }
                 else if (nbX > nbO)
                 {
                     morpion_3_2.Text = "O";
                     nbO += 1;
+                    tab[2, 1] = 0;
                 }
                 morpion_3_2.Update();
-                tab[2, 1] = 1;
+                
                 routine_victoire(tab);
             }
         }
@@ -252,18 +267,20 @@ namespace Morpions
         {
             if (tab[2, 2] == 0)
             {
-                if ((nbX == 0 && nbO == 0) || nbX < nbO)
+                if (nbX <= nbO)
                 {
                     morpion_3_3.Text = "X";
                     nbX += 1;
+                    tab[2, 2] = 1;
                 }
                 else if (nbX > nbO)
                 {
                     morpion_3_3.Text = "O";
                     nbO += 1;
+                    tab[2, 2] = 0;
                 }
                 morpion_3_3.Update();
-                tab[2, 2] = 1;
+                
                 routine_victoire(tab);
             }
         }
