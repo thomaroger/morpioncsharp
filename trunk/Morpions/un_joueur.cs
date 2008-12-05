@@ -829,131 +829,22 @@ namespace Morpions
             op.Show();
         }
 
-        private void morpion_1_1_Click(object sender, EventArgs e)
+        private void case_Click(object sender, EventArgs e)
         {
-            if (tab[0, 0] == 0)
+            Button bouton = (System.Windows.Forms.Button)sender;
+            int num1 = int.Parse(bouton.Name.Substring(8, 1));
+            int num2 = int.Parse(bouton.Name.Substring(10, 1));
+
+            if (tab[num1 - 1, num2 - 1] == 0)
             {
-                morpion_1_1.Text = "X";
-                morpion_1_1.Update();
-                tab[0, 0] = 1;
+                bouton.Text = "X";
+                bouton.Update();
+                tab[num1 - 1, num2 - 1] = 1;
                 if (!routine_victoire(tab))
                 {
                     ia(tab, niveau);
                 }
             }
         }
-
-        private void morpion_1_2_Click(object sender, EventArgs e)
-        {
-            if (tab[0, 1] == 0)
-            {
-                morpion_1_2.Text = "X";
-                morpion_1_2.Update();
-                tab[0, 1] = 1;
-                if (!routine_victoire(tab))
-                {
-                    ia(tab, niveau);
-                }
-            }
-        }
-
-        private void morpion_1_3_Click(object sender, EventArgs e)
-        {
-            if (tab[0, 2] == 0)
-            {
-                morpion_1_3.Text = "X";
-                morpion_1_3.Update();
-                tab[0, 2] = 1;
-                if (!routine_victoire(tab))
-                {
-                    ia(tab, niveau);
-                }
-            }
-        }
-
-        private void morpion_2_1_Click(object sender, EventArgs e)
-        {
-            if (tab[1, 0] == 0)
-            {
-                morpion_2_1.Text = "X";
-                morpion_2_1.Update();
-                tab[1, 0] = 1;
-                if (!routine_victoire(tab))
-                {
-                    ia(tab, niveau);
-                }
-            }
-        }
-
-        private void morpion_2_2_Click(object sender, EventArgs e)
-        {
-            if (tab[1, 1] == 0)
-            {
-                morpion_2_2.Text = "X";
-                morpion_2_2.Update();
-                tab[1, 1] = 1;
-                if (!routine_victoire(tab))
-                {
-                    ia(tab, niveau);
-                }
-            }
-        }
-
-        private void morpion_2_3_Click(object sender, EventArgs e)
-        {
-            if (tab[1, 2] == 0)
-            {
-                morpion_2_3.Text = "X";
-                morpion_2_3.Update();
-                tab[1, 2] = 1;
-                if (!routine_victoire(tab))
-                {
-                    ia(tab, niveau);
-                }
-            }
-        }
-
-        private void morpion_3_1_Click(object sender, EventArgs e)
-        {
-            if (tab[2, 0] == 0)
-            {
-                morpion_3_1.Text = "X";
-                morpion_3_1.Update();
-                tab[2, 0] = 1;
-                if (!routine_victoire(tab))
-                {
-                    ia(tab, niveau);
-                }
-            }
-        }
-
-        private void morpion_3_2_Click(object sender, EventArgs e)
-        {
-            if (tab[2, 1] == 0)
-            {
-                morpion_3_2.Text = "X";
-                morpion_3_2.Update();
-                tab[2, 1] = 1;
-                if (!routine_victoire(tab))
-                {
-                    ia(tab, niveau);
-                }
-            }
-        }
-
-        private void morpion_3_3_Click(object sender, EventArgs e)
-        {
-            if (tab[2, 2] == 0)
-            {
-                morpion_3_3.Text = "X";
-                morpion_3_3.Update();
-                tab[2, 2] = 1;
-                if (!routine_victoire(tab))
-                {
-                    ia(tab, niveau);
-                }
-            }
-        }
-
     }
 }
