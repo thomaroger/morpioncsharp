@@ -64,12 +64,12 @@ namespace Morpions
 
                 if (win == 1)
                 {
-                    label_morpions.Text = "Victoire";
+                    label_morpions.Text = "Victoire joueur 1";
                     return true;
                 }
                 else
                 {
-                    label_morpions.Text = "Perdu";
+                    label_morpions.Text = "Victoire joueur 2";
                     return true;
                 }
 
@@ -85,7 +85,9 @@ namespace Morpions
 
         private void bt_close_Click(object sender, EventArgs e)
         {
-            Close();
+            deux_joueur.ActiveForm.Close();
+            menu op = new menu();
+            op.Show();
         }
 
         private void morpion_1_1_Click(object sender, EventArgs e)
@@ -102,7 +104,7 @@ namespace Morpions
                 {
                     morpion_1_1.Text = "O";
                     nbO += 1;
-                    tab[0, 0] = 0;
+                    tab[0, 0] = 2;
                 }
                 morpion_1_1.Update();
                 routine_victoire(tab);
@@ -123,7 +125,7 @@ namespace Morpions
                 {
                     morpion_1_2.Text = "O";
                     nbO += 1;
-                    tab[0, 1] = 0;
+                    tab[0, 1] = 2;
                 }
                 morpion_1_2.Update();
                 
@@ -145,7 +147,7 @@ namespace Morpions
                 {
                     morpion_1_3.Text = "O";
                     nbO += 1;
-                    tab[0, 2] = 0;
+                    tab[0, 2] = 2;
                 }
                 morpion_1_3.Update();
                 
@@ -167,7 +169,7 @@ namespace Morpions
                 {
                     morpion_2_1.Text = "O";
                     nbO += 1;
-                    tab[1, 0] = 0;
+                    tab[1, 0] = 2;
                 }
                 morpion_2_1.Update();
                 
@@ -189,7 +191,7 @@ namespace Morpions
                 {
                     morpion_2_2.Text = "O";
                     nbO += 1;
-                    tab[1, 1] = 0;
+                    tab[1, 1] = 2;
                 }
                 morpion_2_2.Update();
                 
@@ -211,7 +213,7 @@ namespace Morpions
                 {
                     morpion_2_3.Text = "O";
                     nbO += 1;
-                    tab[1, 2] = 0;
+                    tab[1, 2] = 2;
                 }
                 morpion_2_3.Update();
                 
@@ -233,7 +235,7 @@ namespace Morpions
                 {
                     morpion_3_1.Text = "O";
                     nbO += 1;
-                    tab[2, 0] = 0;
+                    tab[2, 0] = 2;
                 }
                 morpion_3_1.Update();
                 
@@ -255,7 +257,7 @@ namespace Morpions
                 {
                     morpion_3_2.Text = "O";
                     nbO += 1;
-                    tab[2, 1] = 0;
+                    tab[2, 1] = 2;
                 }
                 morpion_3_2.Update();
                 
@@ -277,7 +279,7 @@ namespace Morpions
                 {
                     morpion_3_3.Text = "O";
                     nbO += 1;
-                    tab[2, 2] = 0;
+                    tab[2, 2] = 2;
                 }
                 morpion_3_3.Update();
                 
