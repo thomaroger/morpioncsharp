@@ -14,6 +14,7 @@ namespace Morpions
         int[,] tab = { { 0, 0, 0 }, { 0, 0, 0 }, { 0, 0, 0 } };
         int nbX = 0;
         int nbO = 0;
+        int id;
 
 
         public bool routine_victoire(int[,] tab)
@@ -81,6 +82,11 @@ namespace Morpions
             InitializeComponent();
         }
 
+        public deux_joueur(int id_joueur)
+        {
+            InitializeComponent();
+             id = id_joueur;
+        }
         private void bt_close_Click(object sender, EventArgs e)
         {
             deux_joueur.ActiveForm.Close();
@@ -111,6 +117,11 @@ namespace Morpions
                 bouton.Update();
                 routine_victoire(tab);
             }
+        }
+
+        private void deux_joueur_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

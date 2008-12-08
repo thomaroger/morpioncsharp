@@ -13,11 +13,16 @@ namespace Morpions
 {
     public partial class topTen : Form
     {
+        int id;
         public topTen()
         {
             InitializeComponent();
         }
-
+        public topTen(int id_joueur)
+        {
+            InitializeComponent();
+             id = id_joueur;
+        }
         private void topTen_Load(object sender, EventArgs e)
         {
             // Chaîne de connexion

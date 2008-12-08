@@ -49,7 +49,7 @@
             this.Morpion.ColumnCount = 3;
             this.Morpion.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 49.6F));
             this.Morpion.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50.4F));
-            this.Morpion.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 139F));
+            this.Morpion.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 141F));
             this.Morpion.Controls.Add(this.morpion_3_2, 1, 2);
             this.Morpion.Controls.Add(this.morpion_3_1, 0, 2);
             this.Morpion.Controls.Add(this.morpion_2_3, 2, 1);
@@ -76,7 +76,7 @@
             this.morpion_3_2.ForeColor = System.Drawing.Color.White;
             this.morpion_3_2.Location = new System.Drawing.Point(128, 237);
             this.morpion_3_2.Name = "morpion_3_2";
-            this.morpion_3_2.Size = new System.Drawing.Size(120, 113);
+            this.morpion_3_2.Size = new System.Drawing.Size(118, 113);
             this.morpion_3_2.TabIndex = 7;
             this.morpion_3_2.UseVisualStyleBackColor = false;
             this.morpion_3_2.Click += new System.EventHandler(this.case_Click);
@@ -98,7 +98,7 @@
             this.morpion_2_3.BackColor = System.Drawing.SystemColors.Control;
             this.morpion_2_3.Font = new System.Drawing.Font("Georgia", 50F);
             this.morpion_2_3.ForeColor = System.Drawing.Color.White;
-            this.morpion_2_3.Location = new System.Drawing.Point(255, 116);
+            this.morpion_2_3.Location = new System.Drawing.Point(253, 116);
             this.morpion_2_3.Name = "morpion_2_3";
             this.morpion_2_3.Size = new System.Drawing.Size(128, 114);
             this.morpion_2_3.TabIndex = 5;
@@ -112,7 +112,7 @@
             this.morpion_2_2.ForeColor = System.Drawing.Color.White;
             this.morpion_2_2.Location = new System.Drawing.Point(128, 116);
             this.morpion_2_2.Name = "morpion_2_2";
-            this.morpion_2_2.Size = new System.Drawing.Size(120, 114);
+            this.morpion_2_2.Size = new System.Drawing.Size(118, 114);
             this.morpion_2_2.TabIndex = 4;
             this.morpion_2_2.UseVisualStyleBackColor = false;
             this.morpion_2_2.Click += new System.EventHandler(this.case_Click);
@@ -134,7 +134,7 @@
             this.morpion_1_3.BackColor = System.Drawing.SystemColors.Control;
             this.morpion_1_3.Font = new System.Drawing.Font("Georgia", 50F);
             this.morpion_1_3.ForeColor = System.Drawing.Color.White;
-            this.morpion_1_3.Location = new System.Drawing.Point(255, 4);
+            this.morpion_1_3.Location = new System.Drawing.Point(253, 4);
             this.morpion_1_3.Name = "morpion_1_3";
             this.morpion_1_3.Size = new System.Drawing.Size(128, 105);
             this.morpion_1_3.TabIndex = 2;
@@ -148,7 +148,7 @@
             this.morpion_1_2.ForeColor = System.Drawing.Color.White;
             this.morpion_1_2.Location = new System.Drawing.Point(128, 4);
             this.morpion_1_2.Name = "morpion_1_2";
-            this.morpion_1_2.Size = new System.Drawing.Size(120, 105);
+            this.morpion_1_2.Size = new System.Drawing.Size(118, 105);
             this.morpion_1_2.TabIndex = 1;
             this.morpion_1_2.UseVisualStyleBackColor = false;
             this.morpion_1_2.Click += new System.EventHandler(this.case_Click);
@@ -170,7 +170,7 @@
             this.morpion_3_3.BackColor = System.Drawing.SystemColors.Control;
             this.morpion_3_3.Font = new System.Drawing.Font("Georgia", 50F);
             this.morpion_3_3.ForeColor = System.Drawing.Color.White;
-            this.morpion_3_3.Location = new System.Drawing.Point(255, 237);
+            this.morpion_3_3.Location = new System.Drawing.Point(253, 237);
             this.morpion_3_3.Name = "morpion_3_3";
             this.morpion_3_3.Size = new System.Drawing.Size(128, 113);
             this.morpion_3_3.TabIndex = 8;
@@ -211,6 +211,7 @@
             this.Name = "un_joueur";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "un_joueur";
+            this.Load += new System.EventHandler(this.un_joueur_Load);
             this.Morpion.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();

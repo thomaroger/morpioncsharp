@@ -142,6 +142,7 @@
             this.Name = "password_forget";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Morpion : Mot de Passe oublié";
+            this.Load += new System.EventHandler(this.password_forget_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

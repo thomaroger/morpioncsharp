@@ -17,10 +17,12 @@ namespace Morpions
 {
     public partial class password_forget : Form
     {
+     
         public password_forget()
         {
             InitializeComponent();
         }
+
 
         private void bt_close_Click(object sender, EventArgs e)
         {
@@ -112,6 +114,11 @@ namespace Morpions
                 //fermeture de la forme
                 password_forget.ActiveForm.Close();
             }
+        }
+
+        private void password_forget_Load(object sender, EventArgs e)
+        {
+
         }
 
     }

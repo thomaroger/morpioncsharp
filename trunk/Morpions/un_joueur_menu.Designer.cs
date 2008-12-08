@@ -91,6 +91,7 @@
             this.Controls.Add(this.bt_close);
             this.Name = "un_joueur_menu";
             this.Text = "un_joueur_menu";
+            this.Load += new System.EventHandler(this.un_joueur_menu_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

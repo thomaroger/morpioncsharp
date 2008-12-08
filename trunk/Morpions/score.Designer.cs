@@ -29,8 +29,8 @@
         private void InitializeComponent()
         {
             this.crystalReportViewer1 = new CrystalDecisions.Windows.Forms.CrystalReportViewer();
-            this.bt_close = new System.Windows.Forms.Button();
             this.MesScores1 = new Morpions.MesScores();
+            this.bt_close = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // crystalReportViewer1
@@ -67,6 +67,7 @@
             this.Controls.Add(this.crystalReportViewer1);
             this.Name = "score";
             this.Text = "score";
+            this.Load += new System.EventHandler(this.score_Load);
             this.ResumeLayout(false);
 
         }
