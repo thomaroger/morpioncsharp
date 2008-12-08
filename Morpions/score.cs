@@ -11,10 +11,18 @@ namespace Morpions
 {
     public partial class score : Form
     {
+        int id;
         public score()
         {
             InitializeComponent();
         }
+
+        public score(int id_joueur)
+        {
+            InitializeComponent();
+             id = id_joueur;
+        }
+
 
         private void bt_close_Click(object sender, EventArgs e)
         {
@@ -22,6 +30,11 @@ namespace Morpions
         }
 
         private void crystalReportViewer1_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void score_Load(object sender, EventArgs e)
         {
 
         }

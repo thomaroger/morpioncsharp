@@ -15,6 +15,7 @@ namespace Morpions
         int niveau = 0;
         int joueur = 0;
         int joueur2 = 1;
+        int id;
 
         public void ia(int[,] tab, int lvl) {
             bool tmp,faire=false;
@@ -53,6 +54,7 @@ namespace Morpions
                 }
                 else if (lvl == 2)
                 {
+                    
                     // Niveau RoXor
                     Boolean joue = false;
                     if (tab[0, 0] == tab[0, 1] && tab[0, 0] == 1 && tab[0, 2] == 0 && joue == false)
@@ -814,15 +816,17 @@ namespace Morpions
         {
         }
 
-        public un_joueur(int lvl) {
+        public un_joueur(int lvl,int id_joueur) {
             InitializeComponent();
             niveau = lvl;
+             id = id_joueur;
+
         }
 
         private void bt_close_Click(object sender, EventArgs e)
         {
             un_joueur.ActiveForm.Close();
-            un_joueur_menu op = new un_joueur_menu();
+            un_joueur_menu op = new un_joueur_menu(id);
             op.Show();
         }
 
@@ -842,6 +846,11 @@ namespace Morpions
                     ia(tab, niveau);
                 }
             }
+        }
+
+        private void un_joueur_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

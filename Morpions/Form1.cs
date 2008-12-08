@@ -65,9 +65,13 @@ namespace Morpions
             connection.Close();
 
             // verification du login et du mot de passe avec la base de donnee
-            if (tb_login.Text == "etudiant" && tb_password.Text == "password" || tb_login.Text == login && tb_password.Text == pass)
-            {
-                menu op = new menu();
+          if (tb_login.Text == "etudiant" && tb_password.Text == "password" || tb_login.Text == login && tb_password.Text == pass)
+          {
+              if (tb_login.Text == "etudiant" && tb_password.Text == "password")
+              {
+                id = 1;
+              }
+                menu op = new menu(id);
                 op.Show();
             }
             else {
