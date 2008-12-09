@@ -58,6 +58,6 @@ namespace Morpions
         private void menu_Load(object sender, EventArgs e)
         {
 
-        }
+		}
     }
 }
