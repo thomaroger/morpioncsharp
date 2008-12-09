@@ -37,7 +37,15 @@ namespace Morpions
             string email = tb_email.Text;
             string name = tb_name.Text;
             string surname = tb_surname.Text;
-            
+
+			Regex EmailRegex = new Regex("^[a-z-A-Z0-9_.-]+@{1}[a-z-A-Z0-9_.-]{2,}\\.[a-z-A-Z0-9_.-]{2,}$");
+			//^[a-z-A-Z0-9_.-]      => au debut(le ^), les lettres et chiffres ainsi que _.- sont acceptés
+			//+@{1}                 => juste 1 @
+			//[a-z-A-Z0-9_.-]{2,}   => 2 caractères au moins (le {2,} )
+			//\\.                   => un point
+			//[a-z-A-Z0-9_.-]{2,}$  => 2 caractères au moins à la fin (le $)
+
+
             string msgbox = "";
 
             if (login=="" || password=="" || password2=="" || email=="" || name=="" || surname=="") {
@@ -55,11 +63,11 @@ namespace Morpions
                 }
             }
 
-            if (email.IndexOf("@") <= 0 || email.IndexOf(".") <= 0)
-            {
-                msgbox += "Veuillez entrer une adresse mail valide. \n";
-                flag_email = true;
-            }
+			if(!EmailRegex.IsMatch(email))
+			{
+				msgbox += "Veuillez entrer une adresse mail valide. \n";
+				flag_email = true;
+			}
 
             if (flag_password == true || flag_champ == true || flag_length_password == true || flag_email == true)
             {

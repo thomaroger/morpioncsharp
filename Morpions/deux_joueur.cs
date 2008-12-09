@@ -16,12 +16,13 @@ namespace Morpions
         int nbO = 0;
         int id;
 
-
+		//procédure victoire
         public bool routine_victoire(int[,] tab)
         {
             bool victory = false;
             int win = 0;
 
+			//victoire si ligne ou colonne
             for (int i = 0; i < 3; i++)
             {
                 if (tab[i, 0] == tab[i, 1] && tab[i, 0] == tab[i, 2] && tab[i, 0] != 0)
@@ -36,6 +37,7 @@ namespace Morpions
                 }
             }
 
+			//victoire pour les diagonales
             if (tab[0, 0] == tab[1, 1] && tab[0, 0] == tab[2, 2] && tab[0, 0] != 0)
             {
                 victory = true;
@@ -94,6 +96,7 @@ namespace Morpions
             op.Show();
         }
 
+		//met une croix ou un rond selon le tour du joueur et vérifie s'il y a une victoire
         private void case_Click(object sender, EventArgs e)
         {
             Button bouton = (System.Windows.Forms.Button)sender;

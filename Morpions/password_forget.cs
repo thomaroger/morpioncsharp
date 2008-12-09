@@ -6,6 +6,7 @@ using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Windows.Forms;
+using System.Text.RegularExpressions;
 
 //using pour l'email
 using System.Net.Mail;
@@ -38,6 +39,8 @@ namespace Morpions
             string email = tb_email.Text;
             string name = tb_name.Text;
 
+			Regex EmailRegex = new Regex("^[a-z-A-Z0-9_.-]+@{1}[a-z-A-Z0-9_.-]{2,}\\.[a-z-A-Z0-9_.-]{2,}$");
+
             string msgbox ="";
 
             if (login == "" || email == "" || name == "" )
@@ -46,11 +49,11 @@ namespace Morpions
                 flag_champ = true;
             }
 
-            if (email.IndexOf("@") <= 0 || email.IndexOf(".") <= 0)
-            {
-                msgbox += "Veuillez entrer une adresse mail valide. \n";
-                flag_email = true;
-            }
+			if (!EmailRegex.IsMatch(email))
+			{
+				msgbox += "Veuillez entrer une adresse mail valide. \n";
+				flag_email = true;
+			}
 
             if (flag_champ == true || flag_email == true)
             {
@@ -66,7 +69,7 @@ namespace Morpions
                 //Recepteur
                 string to = tb_email.Text;
                 // Sujet
-                string sujet = "Recuperation de votre mot de passe";            
+                string sujet = "Récuperation de votre mot de passe";            
 
                 // Chaîne de connexion
                 string connectString = "database=Morpions;server=localhost;Integrated Security=true";
