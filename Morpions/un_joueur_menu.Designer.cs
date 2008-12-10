@@ -84,12 +84,14 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.CancelButton = this.bt_close;
             this.ClientSize = new System.Drawing.Size(292, 266);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.bt_close);
             this.Name = "un_joueur_menu";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "un_joueur_menu";
             this.Load += new System.EventHandler(this.un_joueur_menu_Load);
             this.ResumeLayout(false);
