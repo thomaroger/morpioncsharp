@@ -76,7 +76,7 @@ namespace Morpions
             }
             else {
 
-                MessageBox.Show("Accès refusé", "Erreur", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("Identifiants incorrects", "Erreur", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
 
         }
