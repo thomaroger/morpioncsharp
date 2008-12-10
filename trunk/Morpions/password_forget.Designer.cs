@@ -42,6 +42,7 @@
             // 
             this.bt_close.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.bt_close.BackColor = System.Drawing.Color.SkyBlue;
+            this.bt_close.DialogResult = System.Windows.Forms.DialogResult.Cancel;
             this.bt_close.Font = new System.Drawing.Font("Georgia", 12F);
             this.bt_close.ForeColor = System.Drawing.Color.Red;
             this.bt_close.Location = new System.Drawing.Point(122, 306);
@@ -128,8 +129,10 @@
             // 
             // password_forget
             // 
+            this.AcceptButton = this.bt_submit;
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.CancelButton = this.bt_close;
             this.ClientSize = new System.Drawing.Size(419, 361);
             this.Controls.Add(this.tb_email);
             this.Controls.Add(this.label3);

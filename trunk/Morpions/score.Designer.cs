@@ -48,6 +48,7 @@
             // bt_close
             // 
             this.bt_close.BackColor = System.Drawing.Color.SkyBlue;
+            this.bt_close.DialogResult = System.Windows.Forms.DialogResult.Cancel;
             this.bt_close.Font = new System.Drawing.Font("Georgia", 12F);
             this.bt_close.ForeColor = System.Drawing.Color.Red;
             this.bt_close.Location = new System.Drawing.Point(807, 477);
@@ -62,6 +63,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.CancelButton = this.bt_close;
             this.ClientSize = new System.Drawing.Size(927, 524);
             this.Controls.Add(this.bt_close);
             this.Controls.Add(this.crystalReportViewer1);
