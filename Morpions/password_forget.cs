@@ -9,10 +9,11 @@ using System.Windows.Forms;
 using System.Text.RegularExpressions;
 
 //using pour l'email
-using System.Net.Mail;
+//using System.Net.Mail;
 using System.Net;
 using System.Data.Sql;
 using System.Data.SqlClient;
+using System.Web.Mail; 
 
 namespace Morpions
 {
@@ -98,13 +99,23 @@ namespace Morpions
                 {
                 string Body = "Votre mot de passe est :" + pass;
 
-                msg = new MailMessage(from, to, sujet, Body);
+                //msg = new MailMessage(from, to, sujet, Body); 
+                msg = new MailMessage();
+                msg.Body = Body;
+                msg.From = from;
+                msg.To = to;
+                msg.Subject = sujet;
 
-                SmtpClient objSC = new SmtpClient("smtp.gmail.com", 587);
+                //msg.Fields.Add("http://schemas.microsoft.com/cdo/configuration/sendusername", "projet.morpions@gmail.com");
+                //msg.Fields.Add("http://schemas.microsoft.com/cdo/configuration/sendpassword", "lose007*");
+                SmtpMail.SmtpServer = "smtp.gmail.com";
 
-                objSC.Credentials = new NetworkCredential("projet.morpions@gmail.com", "lose007*");
-                objSC.Send(msg);
-                //objSC.SendAsync(msg, "Envoie en cours");
+                //SmtpClient objSC = new SmtpClient("smtp.gmail.com", 587);
+                //objSC.Credentials = new NetworkCredential("projet.morpions@gmail.com", "lose007*");
+
+                //Envoi du message
+                //objSC.Send(msg);
+                SmtpMail.Send(msg);
 
                 msgbox = "Génération de votre mot de passe réussie. \n";
                 msgbox += "Un email vous a été envoyé. \n";
