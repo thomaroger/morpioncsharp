@@ -44,7 +44,7 @@ namespace Morpions
             // Ouverture
             connection.Open();
             // Objet Command
-            SqlCommand command = new SqlCommand("SELECT USER_LOGIN,USER_PASSWORD,USER_ID FROM [USER] WHERE USER_SURNAME = '" + tb_password.Text + "' AND USER_LOGIN = '" + tb_login.Text + "'", connection);
+            SqlCommand command = new SqlCommand("SELECT USER_LOGIN,USER_PASSWORD,USER_ID FROM [USER] WHERE USER_PASSWORD = '" + tb_password.Text + "' AND USER_LOGIN = '" + tb_login.Text + "'", connection);
             // Objet DataReader
             SqlDataReader reader = command.ExecuteReader();
             Object[] row = null;
