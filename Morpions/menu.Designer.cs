@@ -88,9 +88,9 @@
             this.lblScores.Font = new System.Drawing.Font("Georgia", 10F);
             this.lblScores.Location = new System.Drawing.Point(107, 173);
             this.lblScores.Name = "lblScores";
-            this.lblScores.Size = new System.Drawing.Size(77, 17);
+            this.lblScores.Size = new System.Drawing.Size(72, 17);
             this.lblScores.TabIndex = 20;
-            this.lblScores.Text = "Mes scores";
+            this.lblScores.Text = "Les scores";
             this.lblScores.Click += new System.EventHandler(this.lblScores_Click);
             // 
             // menu
