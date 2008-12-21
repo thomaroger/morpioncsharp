@@ -6,6 +6,8 @@ using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Windows.Forms;
+using System.Data.Sql;
+using System.Data.SqlClient;
 
 namespace Morpions
 {
@@ -743,6 +745,40 @@ namespace Morpions
             }
             else {
                 label_morpions.Text = "Match Nul";
+
+                // Chaîne de connexion
+                string connectString = "database=Morpions;server=localhost;Integrated Security=true";
+                // Objet connection
+                SqlConnection connection = new SqlConnection(connectString);
+                // Ouverture
+                connection.Open();
+                // Objet Command
+                Console.WriteLine(id);
+                SqlCommand command2 = new SqlCommand("SELECT USER_DRAW_COMPUTER FROM [USER] WHERE [USER_ID] = " + id, connection);
+                // Objet DataReader
+                SqlDataReader reader2 = command2.ExecuteReader();
+                Object[] row = null;
+                int nb_tmp = 0;
+                while (reader2.Read())
+                {
+                    row = new Object[reader2.FieldCount];
+                    reader2.GetValues(row);
+                    nb_tmp = int.Parse(row.GetValue(0).ToString());
+                }
+                nb_tmp = nb_tmp + 1;
+                Console.WriteLine(nb_tmp);
+                connection.Close();
+
+                string connectString2 = "database=Morpions;server=localhost;Integrated Security=true";
+                // Objet connection
+                SqlConnection connection2 = new SqlConnection(connectString2);
+                connection2.Open();
+                SqlCommand command = new SqlCommand("UPDATE [USER] SET [USER_DRAW_COMPUTER]=" + nb_tmp + "  WHERE [USER_ID] = " + id, connection2);
+                // Objet DataReader
+                SqlDataReader reader = command.ExecuteReader();
+                connection2.Close();
+
+
                 morpion_1_1.Enabled = false;
                 morpion_1_2.Enabled = false;
                 morpion_1_3.Enabled = false;
@@ -801,10 +837,72 @@ namespace Morpions
                 if (win == 1)
                 {
                     label_morpions.Text = "Victoire";
+                    // Chaîne de connexion
+                    string connectString = "database=Morpions;server=localhost;Integrated Security=true";
+                    // Objet connection
+                    SqlConnection connection = new SqlConnection(connectString);
+                    // Ouverture
+                    connection.Open();
+                    // Objet Command
+                    Console.WriteLine(id);
+                    SqlCommand command2 = new SqlCommand("SELECT USER_WIN_COMPUTER FROM [USER] WHERE [USER_ID] = " + id, connection);
+                    // Objet DataReader
+                    SqlDataReader reader2 = command2.ExecuteReader();
+                    Object[] row = null;
+                    int nb_tmp = 0;
+                    while (reader2.Read())
+                    {
+                        row = new Object[reader2.FieldCount];
+                        reader2.GetValues(row);
+                        nb_tmp = int.Parse(row.GetValue(0).ToString());
+                    }
+                    nb_tmp = nb_tmp + 1;
+                    Console.WriteLine(nb_tmp);
+                    connection.Close();
+
+                    string connectString2 = "database=Morpions;server=localhost;Integrated Security=true";
+                    // Objet connection
+                    SqlConnection connection2 = new SqlConnection(connectString2);
+                    connection2.Open();
+                    SqlCommand command = new SqlCommand("UPDATE [USER] SET [USER_WIN_COMPUTER]=" + nb_tmp + "  WHERE [USER_ID] = " + id, connection2);
+                    // Objet DataReader
+                    SqlDataReader reader = command.ExecuteReader();
+                    connection2.Close();
                     return true;
                 }
                 else {
                     label_morpions.Text = "Perdu";
+                    // Chaîne de connexion
+                    string connectString = "database=Morpions;server=localhost;Integrated Security=true";
+                    // Objet connection
+                    SqlConnection connection = new SqlConnection(connectString);
+                    // Ouverture
+                    connection.Open();
+                    // Objet Command
+                    Console.WriteLine(id);
+                    SqlCommand command2 = new SqlCommand("SELECT USER_LOSE_COMPUTER FROM [USER] WHERE [USER_ID] = " + id, connection);
+                    // Objet DataReader
+                    SqlDataReader reader2 = command2.ExecuteReader();
+                    Object[] row = null;
+                    int nb_tmp = 0;
+                    while (reader2.Read())
+                    {
+                        row = new Object[reader2.FieldCount];
+                        reader2.GetValues(row);
+                        nb_tmp = int.Parse(row.GetValue(0).ToString());
+                    }
+                    nb_tmp = nb_tmp+1 ;
+                    Console.WriteLine(nb_tmp);
+                    connection.Close();
+
+                    string connectString2 = "database=Morpions;server=localhost;Integrated Security=true";
+                    // Objet connection
+                    SqlConnection connection2 = new SqlConnection(connectString2);
+                    connection2.Open();
+                    SqlCommand command = new SqlCommand("UPDATE [USER] SET [USER_LOSE_COMPUTER]=" + nb_tmp + "  WHERE [USER_ID] = " + id, connection2);
+                    // Objet DataReader
+                    SqlDataReader reader = command.ExecuteReader();
+                    connection2.Close();
                     return true;
                 }
                
